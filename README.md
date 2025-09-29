@@ -1,5 +1,23 @@
 # Formação Desenvolvedor Web Full Stack
 
+<p align="center">
+  <img src="image/perfil_linkedin.jpeg" alt="Foto de Perfil - Danillo Teles" width="150" style="border-radius:50%"/>
+</p>
+
+<h1 align="center">Danillo Teles</h1>
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/danilloteles/" target="_blank">
+    <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+  </a>
+  <a href="https://wa.me/5562999184007?text=Ol%C3%A1%2C%20vi%20o%20seu%20interesse%20por%20Desenvolvimento%20Web%20Full%20Stack%20e%20fiquei%20interessado%20se%20voc%C3%AA%20quer%20participar%20de%20uma%20Entrevista%20sobre%20a%20vaga%20que%20irei%20lhe%20informar." target="_blank">
+    <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp">
+  </a>
+  <a href="mailto:braddteles@gmail.com" target="_blank">
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
+  </a>
+</p>
+
 Este repositório documenta minha jornada de aprendizado e os projetos desenvolvidos durante a Formação Desenvolvedor Web Full Stack.
 
 ## Sobre Mim
@@ -70,10 +88,3 @@ Abaixo estão os módulos da formação. Conforme eu for concluindo cada um, adi
 - [ ] 🧪 **Testes Unitários (Jest)**
 - [ ] 🎯 **Metodologias Ágeis (SCRUM, Jira)**
 - [ ] 🖼️ **UI/UX (Figma)**
-
-## Contato
-
-Vamos nos conectar!
-
-- **LinkedIn:** [Seu LinkedIn aqui]
-- **E-mail:** [seu.email@exemplo.com]
