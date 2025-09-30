@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mais sobre Formulários</title>
+</head>
+
+<body>
+
+    <h1>Mais sobre Formulários</h1>
+    <form action="processa.html" method="GET">
+        <h2>Label</h2>
+        <!-- 
+            label -> legenda para item da interface
+            for -> para
+        -->
+        <label>
+            Nome:
+            <input type="text" name="nome">
+        </label>
+
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email">
+
+        <br>
+
+        <h3>Botões de rádio</h3>
+        Gênero<br>
+        <input type="radio" name="genero" value="feminino" id="feminino">
+        <label for="feminino">Feminino</label>
+
+        <input type="radio" name="genero" value="masculino" id="masculino">
+        <label for="masculino">Masculino</label>
+        <br>
+
+        <h3>Caixas de verificação</h3>
+        Estilo musical<br>
+        <input type="checkbox" name="estilo" value="rock" id="rock">
+        <label for="rock">Rock</label>
+
+        <input type="checkbox" name="estilo" value="pop" id="pop">
+        <label for="pop">Pop</label>
+
+        <input type="checkbox" name="estilo" value="sertanejo" id="sertanejo">
+        <label for="sertanejo">Sertanejo</label>
+        <br>
+
+        <h3>Caixas suspensas</h3>
+        Estado:
+        <select name="Estado">
+            <option value="">Selecione...</option>
+            <option value="sp">São Paulo</option>
+            <option value="rj">Rio de Janeiro</option>
+            <option value="mg">Minas Gerais</option>
+            <option value="ce">Ceará</option>
+        </select>
+
+        <br><br>
+        Upload de arquivo:
+        <input type="file" name="arquivo">
+
+
+        <br><br>
+        <input type="submit" value="cadastrar">
+
+    </form>
+
+    <form action="processa.html" method="GET">
+
+        <h2>fieldset & legend</h2>
+        <!-- 
+            fielset -> conjunto de campos
+            legend -> legenda para conjunto de campos
+        -->
+        <fieldset>
+            <legend>Dados pessoais</legend>
+
+
+            <label for="nome2">Nome</label>
+            <input type="text" name="nome" id="nome2">
+
+
+            <label for="email2">Email</label>
+            <input type="text" name="email" id="email2">
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados adicionais</legend>
+
+            Gênero<br>
+            <input type="radio" name="genero" value="feminino" id="feminino">
+            <label for="feminino">Feminino</label>
+
+            <input type="radio" name="genero" value="masculino" id="masculino">
+            <label for="masculino">Masculino</label>
+            <br>
+            
+        </fieldset>
+
+    </form>
+
+</body>
+
+</html>
