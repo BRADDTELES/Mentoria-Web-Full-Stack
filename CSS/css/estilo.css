@@ -1,4 +1,21 @@
-/* CSS ddo site americanas de exemplo */
+/* CSS do exercício Classe e ID */
+#topo {
+    background-color: yellow;
+}
+
+#rodape {
+    border: 2px solid grey;
+}
+
+.curso {
+    background-color: lightgray;
+}
+
+.curso-destaque {
+    background-color: orange;
+}
+
+/* CSS do site americanas de exemplo 
 #topo {
     background-color: red;
 }
@@ -14,6 +31,7 @@ a {
 .destaque {
     background-color: orange;
 }
+*/
 
 /* h2 {
     color: blue;
