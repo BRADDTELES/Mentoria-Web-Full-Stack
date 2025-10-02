@@ -1,4 +1,15 @@
-/* CSS do exercício Classe e ID */
+/* Cascata e herença 
+p {
+    color: red;
+}
+
+p {
+    color: blue;
+}
+*/
+
+
+/* CSS do exercício Classe e ID 
 #topo {
     background-color: yellow;
 }
@@ -14,6 +25,7 @@
 .curso-destaque {
     background-color: orange;
 }
+*/
 
 /* CSS do site americanas de exemplo 
 #topo {

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascata e herança no css</title>
+
+    <!-- 
+        CSS -> Cascading Style Sheets (Folhas de Estilo em Cascata)
+        Efeito cascata CSS
+
+        <link rel="stylesheet" href="css/estilo.css">
+    -->
+
+    <style>
+
+        div {
+            color: orange;
+            border: 3px solid red;
+        }
+
+        p {
+            color: red;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div>
+        Pai do parágrafo
+        <p><!-- parent -->
+            Filho da DIV
+            <span>Filho do parágrafo</span>
+        </p>
+
+    </div>
+
+</body>
+
+</html>
