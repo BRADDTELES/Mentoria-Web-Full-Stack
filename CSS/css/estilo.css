@@ -1,3 +1,20 @@
+/* CSS ddo site americanas de exemplo */
+#topo {
+    background-color: red;
+}
+
+a {
+    color: white;
+}
+
+#promocao {
+    background-color: gray;
+}
+
+.destaque {
+    background-color: orange;
+}
+
 /* h2 {
     color: blue;
 }
