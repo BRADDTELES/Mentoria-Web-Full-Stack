@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos e Alinhamentos</title>
+
+    <style>
+
+        body {
+            font-size: 1.5em;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .negrito {
+            /* bold, normal, 100 até 900 */
+            font-weight: 800;
+        }
+
+        .estilo {
+            /* normal, italic, oblique */
+            font-style: italic;
+        }
+
+        .transformacao {
+            /* none, capitalize, uppercase, lowercase */
+            text-transform: capitalize;
+        }
+
+        h1 {
+            text-transform: uppercase;
+        }
+
+        .decoracao {
+            /* none, underline, overline, line-through */
+            text-decoration: underline;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .entrelinhas {
+            border: 1px solid red;
+            line-height: 2em;
+        }
+
+        .espacamento {
+            /* letter-spacing: -0.1em; */
+            /* letter-spacing: 0.2em; */
+            letter-spacing: 0em;
+            word-spacing: 0.2em;
+        }
+
+        .recuo {
+            text-indent: 2em;
+        }
+
+        .alinhamento {
+            /* left, right, center, justify */
+            text-align: justify;
+            border: 1px solid blue;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <h1>Formatações de textos</h1>
+
+    <p class="negrito">Texto negrito</p>
+    <p class="estilo">Texto com estilo</p>
+    <p class="transformacao">Texto com transformação</p>
+    <p class="decoracao">Texto descoração</p>
+
+    <a href="#">Google</a>
+
+    <p class="entrelinhas">Texto entrelinhas</p>
+    <p class="espacamento">Texto com espaço entre letras e palavras</p>
+    <p class="recuo">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus maxime esse saepe deserunt sit accusantium quas magni quibusdam maiores? Itaque, totam ab libero optio accusantium ea quibusdam hic mollitia odit.
+    </p>
+    
+    <p>Texto normal</p>
+    
+    <h1>Alinhamentos de textos</h1>
+    <p class="alinhamento">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus maxime esse saepe deserunt sit accusantium quas magni quibusdam maiores? Itaque, totam ab libero optio accusantium ea quibusdam hic mollitia odit.
+    </p>
+
+</body>
+</html>
