@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens de fundo</title>
+
+    <style>
+        .caixa {
+            width: 700px;
+            height: 300px;
+            border: 3px dotted red;
+
+            /* background-color: lightgreen;
+            background-image: url('img/fundo-css-escuro.png'); */
+
+            /* 
+            repeat -> é repetida horizontal e vertical
+            repeat-x -> é repetida apenas na horizontal
+            repeat-y -> é repetida apenas na vertical
+            no-repeat -> imagem é exibida apenas uma vez
+            Padrão: repeat
+            */
+            /* background-repeat: no-repeat; */
+
+            /* 
+            fixed -> a imagem de fundo permanece na mesma posição na página
+            scrool -> a imagem de fundo move-se com o conteúdo quando o usuário rola a página
+            Padrão: scroll
+            */
+            /* background-attachment: scroll; */
+
+            /* 
+           Quando a imagem não é repetida, você pode posicionar a imagem
+           horizontal: left, center, right
+           vertical: top, center, bottom
+           * Necessário escolher dois valores, senão será utilizado center como segundo valor
+           */
+            /* 
+          background-position: right center; 
+          background-position-x: right;
+          background-position-y: bottom;
+          */
+
+            /* 
+          Todas as propriedades resumidas
+          ordem: cor, imagem, repeat, attachment, position
+          */
+            /* background: lightgreen 
+                    url('img/fundo-css-escuro.png') 
+                    no-repeat 
+                    scroll 
+                    left; */
+            background: 
+            url('img/fundo-css-claro.png') no-repeat right bottom,
+            url('img/fundo-css-escuro.png') no-repeat right top,
+            url('img/fundo-css-claro.png') no-repeat left top;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="caixa">
+
+        <h1>Título do texto</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, aut vel architecto odit quae ut,
+            deleniti quis adipisci voluptas voluptatum itaque dolore optio similique saepe totam temporibus maiores
+            iusto praesentium?
+        </p>
+
+    </div>
+</body>
+
+</html>
