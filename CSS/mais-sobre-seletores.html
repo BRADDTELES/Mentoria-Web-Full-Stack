@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mais sobre seletores (prática)</title>
+
+    <style>
+        /* Seletor universal 
+        * {
+            border: 1px solid red;
+            margin: 0;
+            padding: 0;
+        }*/
+        /* Seletor de texto 
+       h1, p, h2 {
+           border: 1px solid red;
+       }*/
+
+        /* Seletor de classe 
+        p.destaque {
+            background: purple;
+        }
+
+        h1.destaque {
+            background: red;
+        }
+
+        .titulo {
+            color: white
+        }*/
+
+
+        /* Seletor de ID */
+        div#promocao {
+            background-color: purple;
+        }
+
+        span#promocao { /* Não pode repetir o mesmo seletor ID na mesma página */
+            background-color: green;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <h1 class="destaque titulo">Título da página</h1>
+
+    <h2>Subtítulo da página</h2>
+    <p class="destaque">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sequi, debitis molestiae obcaecati hic saepe
+        aperiam at dolores iure incidunt necessitatibus eius ipsum animi quam autem harum deleniti, similique
+        dignissimos!
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sequi, debitis molestiae obcaecati hic saepe
+        aperiam at dolores iure incidunt necessitatibus eius ipsum animi quam autem harum deleniti, similique
+        dignissimos!
+    </p>
+
+    <h2>Subtítulo da página</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sequi, debitis molestiae obcaecati hic saepe
+        aperiam at dolores iure incidunt necessitatibus eius ipsum animi quam autem harum deleniti, similique
+        dignissimos!
+    </p>
+
+    <div id="promocao">
+        <h2>Promoção</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sequi, debitis molestiae obcaecati hic
+            saepe aperiam at dolores iure incidunt necessitatibus eius ipsum animi quam autem harum deleniti, similique
+            dignissimos!
+        </p>
+    </div>
+
+    <span id="promocao">Teste</span>
+
+</body>
+
+</html>
