@@ -37,5 +37,7 @@ div>a {
 }
 
 #rodape {
+    align-content: center;
     text-align: center;
+    background: #c5c5b2;
 }
