@@ -33,21 +33,138 @@
 
 
         /* Seletor de ID */
-        div#promocao {
+        /* div#promocao {
+            background-color: purple;
+        } */
+        
+        /* Não pode repetir o mesmo seletor ID na mesma página */
+        /* span#promocao { 
+            background-color: green;
+        } */
+
+        /* Seletor de filho 
+        div>h1 {
+            background-color: orange;
+        }
+
+        li>a {
+            color: brown;
+            text-decoration: none
+        }*/
+
+        /* Seletor de descendente 
+        div h1 {
+            background-color: orange;
+        }
+
+        li a {
+            color: brown;
+            text-decoration: none
+        }*/
+
+        /* Seletor de irmão adjacente 
+        h1+p {
+            color: brown;
+            border: 1px solid brown;
+        }*/
+
+        /* Seletor de irmão geral 
+        h1~p {
+            color: brown;
+            border: 1px solid brown;
+        }*/
+
+        h1 {
+            color: green;
+        }
+
+        h1+p {
+            border-top: 4px solid gray;
+            padding-top: 10px;
+        }
+
+        p>a {
+            color: white;
             background-color: purple;
         }
 
-        span#promocao { /* Não pode repetir o mesmo seletor ID na mesma página */
-            background-color: green;
+        p.destaque {
+            color: purple;
         }
-
 
     </style>
 </head>
 
 <body>
 
-    <h1 class="destaque titulo">Título da página</h1>
+    <h1>Título da página</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quia veritatis dolor voluptates perferendis repudiandae rerum labore, ab molestias cum aliquid possimus dignissimos fugiat incidunt. Labore perferendis laboriosam impedit error.
+        <br>
+        <a href="">Leia mais</a> -
+        <a href="">Gostei(10)</a>
+    </p>
+
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+    </p>
+
+    <h2>Subtítulo da página</h2>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa sequi repudiandae velit, nulla expedita minus est recusandae, dolore explicabo doloribus eius iusto modi cupiditate fugit magni eaque sapiente animi beatae?
+    </p>
+
+    <p class="destaque">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga harum, cum sunt vel animi voluptates quos modi, maxime accusamus iusto fugit quisquam dolore deserunt. Eligendi fuga esse ipsa similique minima.
+    </p>
+
+
+
+
+    <!-- <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sequi, debitis molestiae obcaecati hic saepe
+        aperiam at dolores iure incidunt necessitatibus eius ipsum animi quam autem harum deleniti, similique
+        dignissimos!
+    </p>
+
+    <h1>Seletor de irmão (adjacente geral)</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sequi, debitis molestiae obcaecati hic saepe
+        aperiam at dolores iure incidunt necessitatibus eius ipsum animi quam autem harum deleniti, similique
+        dignissimos!
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sequi, debitis molestiae obcaecati hic saepe
+        aperiam at dolores iure incidunt necessitatibus eius ipsum animi quam autem harum deleniti, similique
+        dignissimos!
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sequi, debitis molestiae obcaecati hic saepe
+        aperiam at dolores iure incidunt necessitatibus eius ipsum animi quam autem harum deleniti, similique
+        dignissimos!
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sequi, debitis molestiae obcaecati hic saepe
+        aperiam at dolores iure incidunt necessitatibus eius ipsum animi quam autem harum deleniti, similique
+        dignissimos!
+    </p>
+
+    <div style="border: 1px solid black;">
+        <h1 class="titulo destaque">Título da página</h1>
+        <span style="background-color: gray;">
+            <h1 class="titulo destaque">Título da página</h1>
+        </span>
+    </div>
+
+    <ul>
+        <li>
+            <a href="">Home</a>
+            <span><a href="">Outro link</a></span>
+        </li>
+        <li>
+            <a href="">Sobre</a>
+        </li>
+    </ul>
 
     <h2>Subtítulo da página</h2>
     <p class="destaque">
@@ -77,7 +194,7 @@
         </p>
     </div>
 
-    <span id="promocao">Teste</span>
+    <span id="promocao">Teste</span> -->
 
 </body>
 
