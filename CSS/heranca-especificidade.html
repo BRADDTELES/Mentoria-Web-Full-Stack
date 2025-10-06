@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herança e especificidade</title>
+
+    <style>
+        /* Herança 
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            color: black;
+            border: 1px solid red;
+            padding: 3em;
+            margin: 2em;
+        }
+        
+        h1 {
+            color: violet;
+            border: inherit;
+            font-size: inherit;
+        }
+        
+        p {
+            border: 1px solid red;
+        }*/
+
+        /* Especificidade 
+        é a maneira de como os navegadores definem quais valores de propriedades são os mais relevantes para o elemento a ser utilizado. A Especificidade é baseada apenas nas regras impostas na composição de diferentes tipos de seletores.
+
+        calculadora: https://specificity.keegan.st/
+
+        Ordem de aplicação das formatações:
+        1. Regra com !important
+        2. Seletores mais específicos
+        3. Última regra processada
+        */
+        /* #promocao {
+           color: brown;
+       }
+
+        p {
+            color: red;
+        }
+
+        .destaque {
+            color: blueviolet;
+        } */
+
+        /* p {
+            color: blueviolet !important;
+        } */
+
+        /* p {
+            color: blueviolet;
+        }
+
+        p {
+            color: red;
+        } */
+
+        /* PARTE 2
+        Seletores mais específicos:
+        1} Estilo em linha (inline style)
+        2} IDs
+        3} Classe, atributos e pseudo-classes
+        4} Elemento e pseudo-elementos
+        */
+
+        /* p[id] {
+            border: 1px solid red;
+        } */
+
+        /* .promocao {
+            color: hotpink;
+        }
+
+        #paragrafo {
+            color: purple;
+        } */
+
+        p {
+            color: yellow;
+        }
+
+        .destaque {
+            color: green;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Título</h1>
+    <p class="destaque">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aspernatur sapiente voluptatem odio perferendis
+        et at recusandae consequatur veniam minima voluptates quis quisquam beatae libero, sit ad earum eius vero!
+    </p>
+    
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aspernatur sapiente voluptatem odio perferendis
+        et at recusandae consequatur veniam minima voluptates quis quisquam beatae libero, sit ad earum eius vero!
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aspernatur sapiente voluptatem odio perferendis
+        et at recusandae consequatur veniam minima voluptates quis quisquam beatae libero, sit ad earum eius vero!
+    </p>
+
+    <span>Texto</span>
+
+</body>
+
+</html>
