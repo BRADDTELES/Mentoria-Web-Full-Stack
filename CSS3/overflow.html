@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow e dimensões de caixa</title>
+    <style>
+        .caixa {
+            /* 
+            width: 600px;
+            height: 300px;
+            min-width: 400px; Largura mínima 
+            max-width: 600px; Largura máxima 
+            min-height: 200px;
+            */
+            width: 600px;
+            height: 300px;
+            border: 1px solid red;
+            background-color: lightgray;
+            /* 
+            visible: Exibe o conteúdo de forma vazada, fora da caixa de contéudo
+            hidden: Esconde o contéudo excedente
+            scroll: Sempre exibe barras de rolagem
+            auto: adiciona scroll somente se necessário
+            
+            overflow: auto;*/
+            overflow-x: scroll;
+            overflow-y: hidden;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="caixa">
+        <p>
+            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati voluptatum corrupti quae aliquid 
+            nisi fugiat veniam quam iste reiciendis labore at rerum neque, quis, voluptate nobis temporibus 
+            harum culpa necessitatibus.
+        </p>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati voluptatum corrupti quae aliquid nisi
+            fugiat veniam quam iste reiciendis labore at rerum neque, quis, voluptate nobis temporibus harum culpa
+            necessitatibus.
+        </p>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati voluptatum corrupti quae aliquid nisi
+            fugiat veniam quam iste reiciendis labore at rerum neque, quis, voluptate nobis temporibus harum culpa
+            necessitatibus.
+        </p>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati voluptatum corrupti quae aliquid nisi
+            fugiat veniam quam iste reiciendis labore at rerum neque, quis, voluptate nobis temporibus harum culpa
+            necessitatibus.
+        </p>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati voluptatum corrupti quae aliquid nisi
+            fugiat veniam quam iste reiciendis labore at rerum neque, quis, voluptate nobis temporibus harum culpa
+            necessitatibus.
+        </p>
+    </div>
+
+</body>
+
+</html>
