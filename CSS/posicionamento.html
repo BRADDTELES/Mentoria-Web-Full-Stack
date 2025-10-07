@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento</title>
+    <style>
+
+        body {
+            background-color: purple;
+        }
+
+        #container {
+            width: 700px;
+            background-color: white;
+            margin: 10px auto;
+            padding: 8px;
+            position: relative;
+            border: 2px solid greenyellow;
+        }
+
+        .borda {
+            border: 1px solid red;
+        }
+
+        /* Fluxo normal */
+        .estatica {
+            position: static;
+        }
+
+        .relativa {
+            position: relative;
+            /* margin-top: 80px; */
+
+            /* top: 30px;
+            left: 30px; 
+            right: 30px;
+            bottom: 50px;*/
+        }
+
+        .absoluta {
+            /* position: absolute;
+            top: 50%;
+            left: 30px; 
+            bottom: 0;
+            right: 0;*/
+
+            width: 500px;
+            margin: 0;
+        }
+
+        .fixa {
+            position: fixed;
+            width: 400px;
+            height: 120px;
+            /* bottom: 0;
+            left: 0; 
+            top: 50%;
+            right: 10px;*/
+            z-index: 10;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div id="container">
+
+        <div class="fixa" style="background-color: green;">
+            <h3>chat</h3>
+            <button>Enviar mensagem</button>
+        </div>
+
+        <h1 class="borda">Posição absoluta</h1>
+        <p class="borda absoluta" style="background-color: lightpink;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit illo quibusdam quisquam dolorum sed quae est nulla hic odit. Ullam, repudiandae fugiat voluptatem eligendi perferendis magnam doloremque? Omnis, ratione labore?
+        </p>
+
+        <hr>
+
+        <h1 class="borda">Posição relativa</h1>
+        <p class="borda relativa" style="background-color: lightgreen;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit illo quibusdam quisquam dolorum sed quae est nulla hic odit. Ullam, repudiandae fugiat voluptatem eligendi perferendis magnam doloremque? Omnis, ratione labore?
+        </p>
+        <p class="borda">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit illo quibusdam quisquam dolorum sed quae est nulla hic odit. Ullam, repudiandae fugiat voluptatem eligendi perferendis magnam doloremque? Omnis, ratione labore?
+        </p>
+
+        <hr>
+
+        <h1 class="borda estatica">Fluxo normal</h1>
+        <p class="borda estatica">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit illo quibusdam quisquam dolorum sed quae est nulla hic odit. Ullam, repudiandae fugiat voluptatem eligendi perferendis magnam doloremque? Omnis, ratione labore?
+        </p>
+
+        <p class="borda estatica">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit illo quibusdam quisquam dolorum sed quae est nulla hic odit. Ullam, repudiandae fugiat voluptatem eligendi perferendis magnam doloremque? Omnis, ratione labore?
+        </p>
+
+        <p class="borda estatica">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit illo quibusdam quisquam dolorum sed quae est nulla hic odit. Ullam, repudiandae fugiat voluptatem eligendi perferendis magnam doloremque? Omnis, ratione labore?
+        </p>
+        
+
+    </div>
+    
+</body>
+</html>
