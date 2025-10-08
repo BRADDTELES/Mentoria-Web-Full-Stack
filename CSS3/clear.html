@@ -9,6 +9,12 @@
             width: 920px;
             margin: 0 auto;
             border: 1px solid red;
+            background-color: orange;
+        }
+        #principal::after {
+            content: " ";
+            clear: both;
+            display: table;
         }
         .noticia {
             background-color: #e5e5e5;
@@ -27,36 +33,32 @@
             border: 1px solid gray;
             padding: 0.5em;
             background-color: white;
-            width: 200px;
-            float: right;
         }
         .limpar {
-            clear: right;
+            clear: both;
+        }
+        span, h3 {
+            border: 1px solid red;
+        }
+        .mudar-exibicao {
+            display: block;
         }
     </style>
 </head>
 <body>
     <div id="principal">
 
-        <img class="item-galeria" src="img/celular1.png" alt="">
+        <!-- <img class="item-galeria" width="200" style="float: left;" src="img/celular1.png" alt="">
+        <img class="item-galeria" width="300" style="float: right;" src="img/celular2.png" alt="">
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatibus excepturi fuga doloribus expedita pariatur saepe nostrum quis, quasi eaque aliquam commodi incidunt odio sapiente et delectus vero quae deleniti.
         </p>
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatibus excepturi fuga doloribus expedita pariatur saepe nostrum quis, quasi eaque aliquam commodi incidunt odio sapiente et delectus vero quae deleniti.
-        </p>
-        <p class="limpar">
-            Último paragrafo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatibus excepturi fuga doloribus expedita pariatur saepe nostrum quis, quasi eaque aliquam commodi incidunt odio sapiente et delectus vero quae deleniti.
-        </p>
+        </p> -->
+        
         
 
-        <!-- <div class="noticia">
-            <h2>Lorem ipsum dolor sit amet 1</h2>
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, natus ratione, suscipit in eveniet, placeat perferendis cum iste necessitatibus ad nesciunt! Facilis autem deserunt vero, aspernatur sequi sit quod quis.
-            </p>
-        </div>
-
         <div class="noticia">
             <h2>Lorem ipsum dolor sit amet 1</h2>
             <p>
@@ -68,13 +70,25 @@
             <h2>Lorem ipsum dolor sit amet 1</h2>
             <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, natus ratione, suscipit in eveniet, placeat perferendis cum iste necessitatibus ad nesciunt! Facilis autem deserunt vero, aspernatur sequi sit quod quis.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum odit saepe officia tempora praesentium sed, ratione ut culpa excepturi minima similique cum voluptatum reprehenderit non maiores at consequuntur soluta numquam.
             </p>
-        </div> -->
+        </div>
+
+        <div class="noticia">
+            <h2>Lorem ipsum dolor sit amet 1</h2>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, natus ratione, suscipit in eveniet, placeat perferendis cum iste necessitatibus ad nesciunt! Facilis autem deserunt vero, aspernatur sequi sit quod quis.
+            </p>
+        </div>
+
+        
         
     </div>
 
-    <!-- <div id="rodape">
-        <h2>Todos os direitos reservados</h2>
-    </div> -->
+    <div id="rodape">
+        <h3 class="mudar-exibicao">Todos os direitos reservados</h3>
+        <span class="mudar-exibicao">Conteudo de teste</span>
+        <span class="mudar-exibicao">Conteudo de teste 2</span>
+    </div>
 </body>
 </html>
