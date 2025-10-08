@@ -55,10 +55,41 @@ ul#menu li.destaque a:hover {
     border-radius: 1.2rem;
 }
 
+/* Área de destaque */
+#destaque {
+    background-color: #c5e3fe;
+    border-bottom: 1px solid black;
+    margin-top: 4.7rem;
+}
 
+#area-destaque {
+    width: 55%;
+    border: 1px solid blue;
+}
+
+#destaque button {
+    display: block;
+    margin-top: 1.5rem;
+    border-radius: 1.5rem;
+    border: 1px solid black;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    background-color: white;
+}
+
+.fundo-destaque {
+    background: url(../img/fundo-topo.png) no-repeat right bottom;
+    background-size: 22rem; /* o 1º parametro define a largura, o 2º define a altura */
+}
 
 
 /* Tipografia */
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h1 {
+    font-size: 4rem;
+    font-weight: 100;
+    margin: 0;
+    letter-spacing: -0.1rem;
 }
