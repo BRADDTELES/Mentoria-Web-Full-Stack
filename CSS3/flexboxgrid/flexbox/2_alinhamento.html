@@ -14,10 +14,20 @@
             height: 250px;
             border: 4px solid red;
             display: flex;
-            flex-direction: column;
+            /* Row-> MainAxis (Horizontal), CrossAxis (Vertical)
+            Column-> MainAxis (Vertical), CrossAxis (Horizontal) */
+            flex-direction: row;
             /* flex-start, flex-end, center
             space-between, space-around, space-evenly */
-            justify-content: space-between;
+            justify-content: center;
+            /* flex-start, flex-end, center,
+            stretch, baseline 
+            */
+            align-items: flex-end;
+        }
+
+        .texto-grante {
+            font-size: 3rem;
         }
         
         .container-flex > div {
@@ -25,15 +35,36 @@
             margin: 4px;
             border: 1px solid white;
         }
+
+        .coluna {
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+        }
     </style>
 </head>
 <body>
 
     <h1>Alinhamentos</h1>
 
+    <h2>Row</h2>
     <div class="container-flex">
         <div>01</div>
-        <div>02</div>
+        <div class="texto-grante">02</div>
+        <div>03</div>
+        <!-- <div>04</div>
+        <div>05</div>
+        <div>06</div>
+        <div>07</div>
+        <div>08</div>
+        <div>09</div>
+        <div>10</div> -->
+    </div>
+
+    <h2>Column</h2>
+    <div class="container-flex coluna">
+        <div>01</div>
+        <div class="texto-grante">02</div>
         <div>03</div>
         <!-- <div>04</div>
         <div>05</div>
