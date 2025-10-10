@@ -1,0 +1,16 @@
+/* Flex Container */
+header {
+    display: flex;
+    align-items: center;
+}
+
+/* Flex Item de Header e Flex Container */
+nav {
+    border: 1px solid red;
+    flex-grow: 1;
+}
+
+ul {
+    display: flex;
+    padding: 10px;
+}
