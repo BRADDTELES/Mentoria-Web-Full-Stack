@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align Self</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+        
+        .container-flex {
+            /* width: 250px; */
+            height: 200px;
+            border: 4px solid red;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        
+        .container-flex > div {
+            font-size: 2rem;
+            padding: 4px;
+            margin: 4px;
+            border: 1px solid white;
+        }
+
+        .coluna {
+            flex-direction: column;
+        }
+
+        .item1, .item3 {
+            flex-basis: auto;
+        }
+
+        .item2 {
+            flex-basis: 220px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Flex Basis</h1>
+
+    <h2>Row</h2>
+    <div class="container-flex">
+        <div class="item1">Item teste 01</div>
+        <div class="item2">Item teste 02</div>
+        <div class="item3">Item teste 03</div>
+        <!-- <div>04</div>
+        <div>05</div>
+        <div>06</div>
+        <div>07</div>
+        <div>08</div>
+        <div>09</div>
+        <div>10</div> -->
+    </div>
+
+    <h2>Column</h2>
+    <div class="container-flex coluna">
+        <div>01</div>
+        <div>02</div>
+        <div>03</div>
+        <!-- <div>04</div>
+        <div>05</div>
+        <div>06</div>
+        <div>07</div>
+        <div>08</div>
+        <div>09</div>
+        <div>10</div> -->
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+</body>
+</html>
