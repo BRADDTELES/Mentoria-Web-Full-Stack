@@ -9,10 +9,20 @@
             font-size: 3rem;
             background-color: black;
             color: white;
+            margin: 0;
+            padding: 0;
         }
 
         .grid {
-            
+            display: grid;
+            /* grid-template-columns: 200px 200px 200px; */
+           /*  grid-template-columns: 200px 40% 200px; */
+           /* grid-template-columns: repeat(2, 20%) 200px; */
+           /* grid-template-columns: 33% 33% 33%; */
+           /* grid-template-columns: 1fr 1fr 1fr; */
+           /* grid-template-columns: 200px 1fr 1fr; */
+           /* grid-template-columns: repeat(2, 1fr) 2fr; */
+           grid-template-columns: 4fr 4fr 8fr;
         }
 
         .grid > div {
