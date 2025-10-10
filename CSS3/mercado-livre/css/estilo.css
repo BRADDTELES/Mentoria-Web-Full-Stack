@@ -1,0 +1,72 @@
+/* Cascata e herença 
+p {
+    color: red;
+}
+
+p {
+    color: blue;
+}
+*/
+
+
+/* CSS do exercício Classe e ID 
+#topo {
+    background-color: yellow;
+}
+
+#rodape {
+    border: 2px solid grey;
+}
+
+.curso {
+    background-color: lightgray;
+}
+
+.curso-destaque {
+    background-color: orange;
+}
+*/
+
+/* CSS do site americanas de exemplo 
+#topo {
+    background-color: red;
+}
+
+a {
+    color: white;
+}
+
+#promocao {
+    background-color: gray;
+}
+
+.destaque {
+    background-color: orange;
+}
+*/
+
+/* h2 {
+    color: blue;
+}
+
+p {
+    color: indianred;
+}
+
+a {
+    color: green;
+}
+
+li {
+    background-color: skyblue;
+    border: 1px solid black;
+}
+
+table {
+    background-color: orange;
+    border: 4px brown solid;
+}
+
+td {
+    border: 3px solid black;
+} */
