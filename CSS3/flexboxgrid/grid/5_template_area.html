@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,34 +19,84 @@
             row-gap: 20px;
             column-gap: 20px;
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-areas: 
+        
+            grid-template-columns: 1fr;
+                grid-template-areas:
+                    'cabecalho'
+                    'navegacao'
+                    'principal'
+                    'rodape'
+                ;
+        }
+
+        /* celular, tablet, notebook 
+        0 até 600px
+        min-width: 600 até 1200px
+        min-width: 1200px
+        */
+        @media (min-width: 600px) {
+            .grid {
+                grid-template-columns: 1fr 2fr;
+                grid-template-areas:
                 'cabecalho cabecalho'
                 'navegacao principal'
                 'rodape rodape'
             ;
+            }
+        }
+        
+        @media (min-width: 1200px) {
+            .grid {
+                grid-template-columns: 1fr 2fr;
+                grid-template-areas:
+                'cabecalho cabecalho'
+                'navegacao principal'
+                'navegacao rodape'
+            ;
+            }
         }
 
-        header, nav, main, footer {
+        header,
+        nav,
+        main,
+        footer {
             border: 5px solid yellowgreen;
         }
 
-        header {grid-area: cabecalho;}
-        nav {grid-area: navegacao;}
-        main {grid-area: principal;}
-        footer {grid-area: rodape;}
+        header {
+            grid-area: cabecalho;
+        }
 
+        nav {
+            grid-area: navegacao;
+        }
+
+        main {
+            grid-area: principal;
+        }
+
+        footer {
+            grid-area: rodape;
+        }
     </style>
 </head>
+
 <body>
-    
+
     <div class="grid">
         <header>Cabeçalho</header>
-        <nav>Home | Produtos | Login | Cadastro</nav>
+        <nav>Menu de naegação
+            <!-- Home <br>
+            Produtos <br>
+            Login <br>
+            Cadastro <br> -->
+        </nav>
         <main>
             <h2>Conteúdo do sistema</h2>
             <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti magnam vel minus numquam nemo voluptas? Enim, recusandae tenetur dolore delectus reiciendis culpa nisi a eos animi obcaecati ullam sequi perspiciatis.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti magnam vel minus numquam nemo
+                voluptas? Enim, recusandae tenetur dolore delectus reiciendis culpa nisi a eos animi obcaecati ullam
+                sequi perspiciatis.
             </p>
         </main>
         <footer>Rodapé</footer>
@@ -53,4 +104,5 @@
     <br>
 
 </body>
+
 </html>
