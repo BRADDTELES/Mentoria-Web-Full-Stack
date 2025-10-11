@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        body {
+            font-size: 1.2rem;
+            background-color: black;
+            color: white;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .grid {
+            border: 5px solid red;
+            row-gap: 20px;
+            column-gap: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: 
+                'cabecalho cabecalho'
+                'navegacao principal'
+                'rodape rodape'
+            ;
+        }
+
+        header, nav, main, footer {
+            border: 5px solid yellowgreen;
+        }
+
+        header {grid-area: cabecalho;}
+        nav {grid-area: navegacao;}
+        main {grid-area: principal;}
+        footer {grid-area: rodape;}
+
+    </style>
+</head>
+<body>
+    
+    <div class="grid">
+        <header>Cabeçalho</header>
+        <nav>Home | Produtos | Login | Cadastro</nav>
+        <main>
+            <h2>Conteúdo do sistema</h2>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti magnam vel minus numquam nemo voluptas? Enim, recusandae tenetur dolore delectus reiciendis culpa nisi a eos animi obcaecati ullam sequi perspiciatis.
+            </p>
+        </main>
+        <footer>Rodapé</footer>
+    </div>
+    <br>
+
+</body>
+</html>
