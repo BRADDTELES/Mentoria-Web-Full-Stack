@@ -71,8 +71,8 @@ Aqui estão as tecnologias que estou estudando e utilizando nesta formação:
 Abaixo estão os módulos da formação. Conforme eu for concluindo cada um, adicionarei os projetos e um resumo do que aprendi.
 
 - [x] 📝 **HTML** 
-- [ ] 🎨 **CSS** (Em andamento)
-- [ ] 🐙 **Git e GitHub**
+- [x] 🎨 **CSS**
+- [ ] 🐙 **Git e GitHub** (Em andamento)
 - [ ] 💻 **JavaScript**
 - [ ] 🚀 **Node.js**
 - [ ] 🔷 **TypeScript**
