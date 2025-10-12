@@ -18,17 +18,17 @@ header {
     display: flex;
     align-items: center;
     padding: 0 10px;
-    border: 1px solid red;
 }
 
 section#capa-conteudo {
     grid-area: capa-conteudo;
-    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 section#capa-imagem {
     grid-area: capa-imagem;
-    border: 1px solid red;
 }
 
 section#capa-imagem > img,
@@ -38,12 +38,21 @@ section#organizacao-imagem > img {
 
 section#organizacao-imagem {
     grid-area: organizacao-imagem;
-    border: 1px solid red;
 }
 
 section#organizacao-conteudo {
     grid-area: organizacao-conteudo;
-    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer {
+    background: #f2f2f2;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+    margin-top: 20px;
 }
 
 /* Flex Item de Header e Flex Container */
@@ -57,12 +66,11 @@ nav ul {
     /* remove as bolinhas ou marcadores */
 }
 
-ul a:link,
-a:visited {
+ul a:link, a:visited {
     padding: 10px;
     text-decoration: none;
-    /* remove o sublinhado */
     color: #484848;
+    font-size: 1.2rem;
 }
 
 ul a:hover {
@@ -75,6 +83,7 @@ ul a:hover {
     border: 2px solid #0b5cff;
     border-radius: 25px;
     padding: 5px 30px;
+    align-self: flex-start;
 }
 
 .botao:hover {
@@ -89,4 +98,28 @@ ul a:hover {
 .botao.destaque:hover {
     background: #2d73ff;
     color: white;
+}
+
+
+/* Tipografia */
+body {
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+.texto-destaque {
+    color: #2d73ff
 }
