@@ -1,0 +1,9 @@
+h1 {
+    color: red;
+}
+
+#mensagem {
+    background-color: black;
+    color: white;
+    font-size: 2rem;
+}
