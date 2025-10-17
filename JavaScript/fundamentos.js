@@ -44,8 +44,20 @@ console.log(resultado) */
 */
 
 /* Variáveis e seus tipos */
-let nome = "Jamilton" //String
-let numero = 1200 //Number: inteiro ou decimais
-let decimal = 1200.50 //Number: decimal
-let negativo = -1200
-let avancarProximoEpisodio = false //Boolean: booleanos true ou false
+//let nome = "Jamilton" //String
+//let numero = 1200 //Number: inteiro ou decimais
+//let decimal = 1200.50 //Number: decimal
+//let negativo = -1200
+//let avancarProximoEpisodio = false //Boolean: booleanos true ou false
+
+/* Operadores aritméticos
+Somar (+)
+Subtrair (-)
+Multiplicar (*)
+Dividir (/)
+*/
+let numero1 = 10
+let numero2 = 5
+
+let resultado = numero1 / numero2
+console.log(resultado)
