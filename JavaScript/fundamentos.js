@@ -119,7 +119,7 @@ if( opcao == 1 ){
   console.log("Opção inválida")
 } */
 
-/* Operador Ternário & Switch */
+/* Operador Ternário & Switch 
 let opcao = 1
 
 switch( opcao ){
@@ -137,3 +137,45 @@ switch( opcao ){
 let idade = 15
 let resultado = idade >= 18 ? "Maior de idade" : "Menor de idade"
 console.log(resultado)
+*/
+
+/* Funções */
+/* 
+1) Desligar a torneira;
+2) Pedir copo de água;
+3) Ir ao mercado comprar arroz;
+*/
+
+function desligarTorneira () {
+  console.log("Desligar a toneira")
+}
+
+desligarTorneira()
+
+function pedirCopoAgua() {
+  return "Copo Agua"
+}
+
+//let retorno = pedirCopoAgua()
+//console.log(retorno)
+
+function irMercadoComprarArroz(dinheiro){
+  console.log("pegar transporte")
+  console.log("Produrar o arroz")
+
+  return "arroz"
+}
+
+//let retorno = irMercadoComprarArroz(10)
+//console.log(retorno)
+
+function calcularMedia(nota1, nota2) {
+  let totalNotas = nota1 + nota2
+  let media = totalNotas / 2
+
+  return media
+}
+
+let media = calcularMedia(8, 8)
+let novaMedia = media + 1
+console.log(novaMedia)
