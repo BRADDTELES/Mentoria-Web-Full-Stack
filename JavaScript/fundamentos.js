@@ -91,7 +91,30 @@ let n2 = 10
 //let resultado = 2==3 || 1==3
 //let resultado = idade >= 18 && idade <= 40
 
-let idade = 18
+/* let idade = 18
 let totalCompra = 250
 let resultado = idade >= 40 || totalCompra >= 200
-console.log(resultado)
+console.log(resultado) */
+
+/* Estruturas condicionais if else */
+//let idade = 39
+//let compras = 120
+/* if( idade >= 18 && idade <= 25 ){
+  console.log("Maior de idade")
+}  */
+/* if( idade >= 40 || compras >= 400 ){
+  console.log("Desconto de 20%")
+} else {
+  console.log("Não tem desconto")
+} */
+
+let opcao = 0
+if( opcao == 1 ){
+  console.log("Saldo conta")
+} else if( opcao == 2 ){
+  console.log("Cartão de crédito")
+}else if( opcao == 3 ) {
+  console.log("Descontos indevidos")
+}else {
+  console.log("Opção inválida")
+}
