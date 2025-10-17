@@ -108,7 +108,7 @@ console.log(resultado) */
   console.log("Não tem desconto")
 } */
 
-let opcao = 0
+/* let opcao = 0
 if( opcao == 1 ){
   console.log("Saldo conta")
 } else if( opcao == 2 ){
@@ -117,4 +117,23 @@ if( opcao == 1 ){
   console.log("Descontos indevidos")
 }else {
   console.log("Opção inválida")
+} */
+
+/* Operador Ternário & Switch */
+let opcao = 1
+
+switch( opcao ){
+  case 1:
+    console.log("Saldo da conta")
+    break
+  case 2:
+    console.log("Cartão de crédito")
+    break
+  default:
+    console.log("Opção inválida")
+    break
 }
+
+let idade = 15
+let resultado = idade >= 18 ? "Maior de idade" : "Menor de idade"
+console.log(resultado)
