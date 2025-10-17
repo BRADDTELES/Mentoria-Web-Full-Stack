@@ -56,8 +56,42 @@ Subtrair (-)
 Multiplicar (*)
 Dividir (/)
 */
-let numero1 = 10
+/* let numero1 = 10
 let numero2 = 5
 
 let resultado = numero1 / numero2
+console.log(resultado) */
+
+/* Operadores relacionais e Lógicos */
+/* Operadores relacionais (retorna verdadeiro ou false)
+== (igual a)
+!= (diferente)
+> (maior que)
+< (menor que)
+>= (maior ou igual)
+<= (menor ou igual)
+*/
+
+let n1 = 20
+let n2 = 10
+//let idade = 25
+//let resultado = n1 <= n2
+//let resultado = idade > 18
+//let pedidoMinimo = 20
+//let compraPessoa = 5
+//let resultado = compraPessoa > pedidoMinimo
+//console.log(resultado)
+
+/* Operadores Lógicos
+&& (e)
+|| (ou)
+! (negação) 
+*/
+//let idade = 15
+//let resultado = 2==3 || 1==3
+//let resultado = idade >= 18 && idade <= 40
+
+let idade = 18
+let totalCompra = 250
+let resultado = idade >= 40 || totalCompra >= 200
 console.log(resultado)
