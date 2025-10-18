@@ -204,13 +204,57 @@ while( numero < totalPostagens ){
 } */
 
 /* Concatenação & Template String */
-const nome = "Danillo";
+/* const nome = "Danillo";
 const numero = 2;
 
 console.log( nome + " - " + numero );
 console.log( "Bem vindo " + nome );
 console.log( "Bem vindo " + nome + " você tem " + numero );
 
-const texto = `Bem vindo ${nome} 
-você tem ${numero}`
-console.log( texto )
+const texto = `Bem vindo ${nome} você tem ${numero}`
+console.log( texto ) */
+
+/* Loops – do...while e for */
+//While
+/* let numero = 1
+while( numero <= 5 ){
+  console.log(`Executou ${numero}`)
+  //numero = numero + 1
+  numero++
+} */
+
+//do...while
+/* let numero = 5
+do{
+  console.log(`Executou ${numero}`)
+  numero--
+} while( numero >= 1 ) */
+
+//for
+let numero = 1;
+while (numero <= 5) {
+  console.log(`Executou ${numero}`);
+  numero++;
+}
+console.log("--------------------");
+for (let numero = 1; numero <= 5; numero++) {
+  console.log(`Executou ${numero}`);
+}
+console.log("--------------------");
+let postagens = [
+  "Hoje passeando pela av paulista",
+  "Passeando em Campos do Jordão",
+  "Hoje fim um curso de criação de sites",
+  "Na casa da mamãe, aproveitando o dia!",
+  "postagem 5",
+];
+
+/* const total = postagens.length
+for( let numero = 0; numero < total; numero++  ){
+  console.log(`${postagens[numero]}`)
+  } */
+
+//for main curto
+for (indice in postagens) {
+  console.log(postagens[indice]);
+}
