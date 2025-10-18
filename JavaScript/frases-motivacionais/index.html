@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- Javascript -->
+  <script type="text/javascript">
+
+    function gerarFraseMotivacional() {
+
+      const frases = [
+        "Os problemas são oportunidades para se mostrar o que sabe.",
+        "Nossos fracassos, às vezes, são mais frutíferos d oque os êxitos.",
+        "Tente de novo. Fracasse de novo. Mas fracasse melhor.",
+        "Experiência é o nome que cada um dá a seus erros.",
+        "Um objetico nada mais é do que um sonho com limite de tempo.",
+        "Sorte é o que acontece quando a preparação encontra a oportunidade.",
+        "O único lugar que o sucesso vem antes do trabalho é no dicionário.",
+        "É tentando o impossível que se chega à realização do possível.",
+        "Muda tuas ideias e mudará teu mundo.",
+        "Em busca do ótimo não se faz o bom."
+      ]
+
+      const numeroAleatorio = Math.floor(Math.random() * 10)
+      const frase = frases[numeroAleatorio]
+
+      document.getElementById('frase').innerHTML = frase
+
+    }
+
+    /* function novaFrase() {
+      let frases = [
+        "Adquirir conhecimentos nunca é pouco",
+        "Em busca de aprendizados sobre Desenvolvimento Web",
+        "O aprendizado nunca é demorado",
+        "Aprender nunca é difícil"
+      ]
+      let numeroAleatorio = Math.floor(Math.random() * frases.length);
+      document.getElementById('frase').innerHTML = frases[numeroAleatorio];
+      return false;
+    } */
+
+  </script>
+
+
+  <title>Frases motivacionais</title>
+
+</head>
+
+<body>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-12">
+
+        <div class="jumbotron">
+          <h1 class="text-success display-5">Frases motivacionais</h1>
+          <hr>
+
+          <h2 class="display-4" id="frase">
+            Em busca do ótimo não se faz o bom.
+          </h2>
+
+          <hr>
+          <button type="button" class="btn btn-success btn-lg" onclick="
+          gerarFraseMotivacional()
+          /* novaFrase() */
+          ">Nova frase</button>
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
