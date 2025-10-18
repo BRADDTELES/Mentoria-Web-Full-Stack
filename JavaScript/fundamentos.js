@@ -72,8 +72,8 @@ console.log(resultado) */
 <= (menor ou igual)
 */
 
-let n1 = 20
-let n2 = 10
+/* let n1 = 20
+let n2 = 10 */
 //let idade = 25
 //let resultado = n1 <= n2
 //let resultado = idade > 18
@@ -146,7 +146,7 @@ console.log(resultado)
 3) Ir ao mercado comprar arroz;
 */
 
-function desligarTorneira () {
+/* function desligarTorneira () {
   console.log("Desligar a toneira")
 }
 
@@ -154,22 +154,22 @@ desligarTorneira()
 
 function pedirCopoAgua() {
   return "Copo Agua"
-}
+} */
 
 //let retorno = pedirCopoAgua()
 //console.log(retorno)
 
-function irMercadoComprarArroz(dinheiro){
+/* function irMercadoComprarArroz(dinheiro){
   console.log("pegar transporte")
   console.log("Produrar o arroz")
 
   return "arroz"
-}
+} */
 
 //let retorno = irMercadoComprarArroz(10)
 //console.log(retorno)
 
-function calcularMedia(nota1, nota2) {
+/* function calcularMedia(nota1, nota2) {
   let totalNotas = nota1 + nota2
   let media = totalNotas / 2
 
@@ -178,4 +178,27 @@ function calcularMedia(nota1, nota2) {
 
 let media = calcularMedia(8, 8)
 let novaMedia = media + 1
-console.log(novaMedia)
+console.log(novaMedia) */
+
+/* 
+while(condição) {
+  Executa enquanto a condição é verdadeira
+}
+*/
+let postagens = [
+  "Hoje passeando pela av paulista",
+  "Passeando em Campos do Jordão",
+  "Hoje fim um curso de criação de sites",
+  "Na casa da mamãe, aproveitando o dia!",
+  "postagem 5"
+]
+const totalPostagens = postagens.length
+console.log(totalPostagens)
+let numero = 0
+
+while( numero < totalPostagens ){
+  console.log("IMAGEM " + numero)
+  console.log( postagens[numero] )
+  console.log("----------------------------")
+  numero = numero + 1
+}
