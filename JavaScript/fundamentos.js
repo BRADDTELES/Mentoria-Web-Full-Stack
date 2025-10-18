@@ -185,7 +185,7 @@ while(condição) {
   Executa enquanto a condição é verdadeira
 }
 */
-let postagens = [
+/* let postagens = [
   "Hoje passeando pela av paulista",
   "Passeando em Campos do Jordão",
   "Hoje fim um curso de criação de sites",
@@ -201,4 +201,16 @@ while( numero < totalPostagens ){
   console.log( postagens[numero] )
   console.log("----------------------------")
   numero = numero + 1
-}
+} */
+
+/* Concatenação & Template String */
+const nome = "Danillo";
+const numero = 2;
+
+console.log( nome + " - " + numero );
+console.log( "Bem vindo " + nome );
+console.log( "Bem vindo " + nome + " você tem " + numero );
+
+const texto = `Bem vindo ${nome} 
+você tem ${numero}`
+console.log( texto )
