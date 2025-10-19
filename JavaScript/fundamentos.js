@@ -260,25 +260,36 @@ for( let numero = 0; numero < total; numero++  ){
 } */
 
 /* Operadores de atribuição */
-let salario = 500
-let bonus = 200
+//let salario = 500
+//let bonus = 200
 
 //salario = salario + bonus
 //salario += bonus
 
-let desconto = 100
+//let desconto = 100
 //salario = salario - desconto
 //salario -= desconto
 
-let mult = 2
+//let mult = 2
 //salario = salario * mult
 //salario *= mult
 
-let div = 2
+//let div = 2
 //salario = salario / div
 //salario /= div
 
-let resto = 2
+//let resto = 2
 //salario = salario % resto
 //salario %= resto
-console.log(salario)
+//console.log(salario)
+
+/* Operadores unários */
+//let numero = 1
+
+//Pré fixado
+//console.log( ++numero )
+
+
+//Pos fixado
+//console.log( numero++ )
+//numero
