@@ -231,7 +231,7 @@ do{
 } while( numero >= 1 ) */
 
 //for
-let numero = 1;
+/* let numero = 1;
 while (numero <= 5) {
   console.log(`Executou ${numero}`);
   numero++;
@@ -247,7 +247,7 @@ let postagens = [
   "Hoje fim um curso de criação de sites",
   "Na casa da mamãe, aproveitando o dia!",
   "postagem 5",
-];
+]; */
 
 /* const total = postagens.length
 for( let numero = 0; numero < total; numero++  ){
@@ -255,6 +255,30 @@ for( let numero = 0; numero < total; numero++  ){
   } */
 
 //for main curto
-for (indice in postagens) {
+/* for (indice in postagens) {
   console.log(postagens[indice]);
-}
+} */
+
+/* Operadores de atribuição */
+let salario = 500
+let bonus = 200
+
+//salario = salario + bonus
+//salario += bonus
+
+let desconto = 100
+//salario = salario - desconto
+//salario -= desconto
+
+let mult = 2
+//salario = salario * mult
+//salario *= mult
+
+let div = 2
+//salario = salario / div
+//salario /= div
+
+let resto = 2
+//salario = salario % resto
+//salario %= resto
+console.log(salario)
