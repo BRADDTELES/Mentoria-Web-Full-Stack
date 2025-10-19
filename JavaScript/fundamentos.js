@@ -302,9 +302,37 @@ for( let numero = 0; numero < total; numero++  ){
   console.log(numero)
 } */
 
-function calcular(){
+/* function calcular(){
   var numero = 12
-}
+} */
 //calcular()
 //numero = 20
-console.log(numero)
+//console.log(numero)
+
+/* Função Anônima & Arrow */
+// + Função literal
+/* function somar(a, b){
+  console.log(a+b)
+}
+somar(1,2) */
+
+// + Função anônima (sem nome) é usado mais em objetos
+/* const somar = function(a, b){
+  console.log(a+b)
+}
+somar(1,2) */
+
+// + Função arrow ( seta ) é usado muito em Arrays
+/* const somar = (a, b) => {
+  console.log(a+b)
+}
+somar(1,2) */
+
+// + Função arrow ( retorno implícito )
+//const somar = (a, b) => console.log(a+b)
+//somar(1,2)
+//const exibir = n => console.log("nome: " + n)
+//exibir("teste")
+/* const somar = (a, b) => a + b
+let resultado = somar(1, 2)
+console.log(resultado) */
