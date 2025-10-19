@@ -293,3 +293,18 @@ for( let numero = 0; numero < total; numero++  ){
 //Pos fixado
 //console.log( numero++ )
 //numero
+
+/* Diferença de Var e Let (Escopo de variáveis) */
+//var numero = 10
+//let numero = 10 //global
+/* {
+  let numero = 5
+  console.log(numero)
+} */
+
+function calcular(){
+  var numero = 12
+}
+//calcular()
+//numero = 20
+console.log(numero)
