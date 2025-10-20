@@ -187,49 +187,97 @@ console.log(usuario.calcularDesconto( "FESTA10" )) */
 // carro.frear()
 
 // Encapsulamento, modificadores de acesso e getters e setters
-class ContaBancaria {
-    constructor(){
-        // private, protected e public
-        this._numeroConta = 0
-        this._saldo = 0
-    }
+// class ContaBancaria {
+//     constructor(){
+//         // private, protected e public
+//         this._numeroConta = 0
+//         this._saldo = 0
+//     }
 
-    sacar( valorSaque ){
-        this._saldo = this._saldo - valorSaque
-    }
+//     sacar( valorSaque ){
+//         this._saldo = this._saldo - valorSaque
+//     }
 
-    depositar( valorDeposito ){
-        this._saldo += valorDeposito
-    }
+//     depositar( valorDeposito ){
+//         this._saldo += valorDeposito
+//     }
 
-    get saldo(){
-        return this._saldo
-    }
+//     get saldo(){
+//         return this._saldo
+//     }
 
-    set saldo( novoSaldo ){
-        if ( novoSaldo  > 0 ){
-            this._saldo = novoSaldo
-        }
-    }
-    get numeroConta(){
-        return "Número: " + this._numeroConta
-    }
+//     set saldo( novoSaldo ){
+//         if ( novoSaldo  > 0 ){
+//             this._saldo = novoSaldo
+//         }
+//     }
+//     get numeroConta(){
+//         return "Número: " + this._numeroConta
+//     }
 
-    set numeroConta( numero ){
-        if ( numero > 0 ){
-            this._numeroConta = numero
-        }
-    }
+//     set numeroConta( numero ){
+//         if ( numero > 0 ){
+//             this._numeroConta = numero
+//         }
+//     }
 
-}
+// }
 
-const conta = new ContaBancaria()
+// const conta = new ContaBancaria()
 //conta.numeroConta = 60
 //conta.numeroConta = 60
 //console.log( conta.numeroConta )
 
-conta.saldo = 500 // segura
-conta.sacar(50)
-conta.depositar(100)
+// conta.saldo = 500 // segura
+// conta.sacar(50)
+// conta.depositar(100)
 
-console.log( conta.saldo )
+// console.log( conta.saldo )
+
+// Herança - Reutilização e manutenção
+
+// Classe: Cao e Passaro
+
+class Animal {// superclasse - pai
+    constructor(){
+        this.cor = ""
+        this.tamanho = 0
+        this.peso = 0
+    }
+
+    correr(){
+        console.log("correr")
+    }
+    dormir(){
+        console.log("dormir")
+    }
+}
+class Cao extends Animal{// subclasse - filha
+    latir(){
+        console.log("latir")
+    }
+}
+
+class Passaro extends Animal {// subclasse - filha
+    voar(){
+        console.log("voar")
+    }
+}
+
+// Instancia
+const cao = new Cao()
+const passaro = new Passaro()
+
+//cao.correr()
+
+passaro.correr()
+passaro.voar()
+//passaro.cor = "Amarelo"
+//console.log( passaro.cor )
+
+/* cao.correr()
+cao.latir()
+passaro.correr()
+passaro.voar() */
+
+
