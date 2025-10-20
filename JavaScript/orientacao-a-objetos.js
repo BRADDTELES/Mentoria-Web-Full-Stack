@@ -83,27 +83,27 @@ console.log(hotel.quartos) */
 /* 
 Modelo, Entidade, Identidade, Características e Ações
 */
-class Carro {
-    constructor(){
-        this.marca = "Volkswagem",
-        this.modelo = "Gol",
-        this.cor = "prata",
-        this.placa = "EMJ-2565"
-    }
-    ligar(){
-        console.log("Ligado")
-    }
-}
+// class Carro {
+//     constructor(){
+//         this.marca = "Volkswagem",
+//         this.modelo = "Gol",
+//         this.cor = "prata",
+//         this.placa = "EMJ-2565"
+//     }
+//     ligar(){
+//         console.log("Ligado")
+//     }
+// }
 
-const carro = new Carro()
-carro.modelo = "Golf"
-console.log(carro.modelo)
+// const carro = new Carro()
+// carro.modelo = "Golf"
+// console.log(carro.modelo)
 
-const carro2 = new Carro()
-console.log(carro2.modelo)
+// const carro2 = new Carro()
+// console.log(carro2.modelo)
 
 // Loja Virtual
-class Produto {
+/* class Produto {
     constructor(){
 
         // roupas
@@ -115,6 +115,54 @@ class Produto {
         this.altura = "50cm",
         this.largura = "30cm"
 
+    }
+} */
+    
+/* Métodos - Retornos e Parâmetros */
+class Usuario {
+    constructor(){
+        this.email = "",
+        this. senha = "",
+        this.subtotalCompra = 0
+    }
+
+    logar(){
+
+        let emailBD = "ja@gmail.com"
+        let senhaBD = "1234"
+
+        if( senhaBD == this.senha ){
+            //console.log("senha válida")
+            return "senha válida"
+        } else {
+            //console.log("senha inválida")
+            return "senha inválida"
+        }
+
+    }
+
+    calcularDesconto( cupom ){
+
+        let desconto = 0
+        if( cupom == "DESC20" ) {
+            desconto = 20
+        } else if( cupom == "FESTA10" ){
+            desconto = 10
+        }
+
+        /* let total = this.subtotalCompra - desconto
+        return total */
+        return this.subtotalCompra - desconto
 
     }
 }
+
+const usuario = new Usuario()
+/* usuario.email = "ja@gmail.com"
+usuario.senha = "1234"
+
+let mensagem =usuario.logar()
+console.log(mensagem) */
+
+usuario.subtotalCompra = 500
+console.log(usuario.calcularDesconto( "FESTA10" ))
