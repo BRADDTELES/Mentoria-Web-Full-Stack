@@ -239,10 +239,10 @@ console.log(usuario.calcularDesconto( "FESTA10" )) */
 // Classe: Cao e Passaro
 
 class Animal {// superclasse - pai
-    constructor(){
-        this.cor = ""
-        this.tamanho = 0
-        this.peso = 0
+    constructor( pCor, pTamanho, pPeso ){
+        this.cor = pCor
+        this.tamanho = pTamanho
+        this.peso = pPeso
     }
 
     correr(){
@@ -256,9 +256,10 @@ class Animal {// superclasse - pai
     }
 }
 class Cao extends Animal{// subclasse - filha
-    constructor(){
-        super()
-        this.tamanhoOrelha = 0
+    constructor( pCor, pTamanho, pPeso, pOrelha ){
+        super( pCor, pTamanho, pPeso )
+        //super.cor = "Cor do cão"
+        this.tamanhoOrelha = pOrelha
     }
 
     correr(){
@@ -272,14 +273,24 @@ class Cao extends Animal{// subclasse - filha
 }
 
 class Passaro extends Animal {// subclasse - filha
+
+    constructor( pCor, pTamanho, pPeso ){
+        super( pCor, pTamanho, pPeso )
+    }
+    correr(){
+        super.correr() // Sobrescrever outro método -> Polimorfismo
+        console.log("passaro")
+        // 5 linhas de códigos
+    }
     voar(){
         console.log("voar")
     }
 }
 
 class Papagaio extends Passaro {
-    constructor(){
-        super()
+    constructor( pCor, pTamanho, pPeso, pSabeFalar ){
+        super( pCor, pTamanho, pPeso )
+        this.sabeFalar = pSabeFalar
     }
     falar(){
         console.log("falar")
@@ -287,11 +298,25 @@ class Papagaio extends Passaro {
 }
 
 // Instancia
-const cao = new Cao()
-const passaro = new Passaro()
-const papagaio = new Papagaio()
+//const animal = new Animal( "Amarelo", 60, 3 )
+const cao = new Cao( "Amarelo", 60, 3 , 5 )
+const passaro = new Passaro( "Marrom", 45, 3 )
+const papagaio = new Papagaio( "Verde", 35, 2, true )
 
-cao.correr()
+console.log( papagaio.sabeFalar)
+console.log( papagaio.cor )
+console.log( passaro.cor)
+
+//cao.tamanhoOrelha = 4
+//console.log( cao.tamanhoOrelha )
+
+//animal.cor = "Amarelo"
+//console.log( animal.cor )
+
+//cao.correr()
+//passaro.correr()
+//cao.cor = "Marrom"
+//console.log( cao.cor )
 
 // cao.tamanhoOrelha = 50
 // console.log( cao.tamanhoOrelha )
