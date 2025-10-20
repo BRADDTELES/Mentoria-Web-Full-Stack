@@ -119,50 +119,69 @@ Modelo, Entidade, Identidade, Características e Ações
 } */
     
 /* Métodos - Retornos e Parâmetros */
-class Usuario {
-    constructor(){
-        this.email = "",
-        this. senha = "",
-        this.subtotalCompra = 0
-    }
+// class Usuario {
+//     constructor(){
+//         this.email = "",
+//         this. senha = "",
+//         this.subtotalCompra = 0
+//     }
 
-    logar(){
+//     logar(){
 
-        let emailBD = "ja@gmail.com"
-        let senhaBD = "1234"
+//         let emailBD = "ja@gmail.com"
+//         let senhaBD = "1234"
 
-        if( senhaBD == this.senha ){
-            //console.log("senha válida")
-            return "senha válida"
-        } else {
-            //console.log("senha inválida")
-            return "senha inválida"
-        }
+//         if( senhaBD == this.senha ){
+//             //console.log("senha válida")
+//             return "senha válida"
+//         } else {
+//             //console.log("senha inválida")
+//             return "senha inválida"
+//         }
 
-    }
+//     }
 
-    calcularDesconto( cupom ){
+//     calcularDesconto( cupom ){
 
-        let desconto = 0
-        if( cupom == "DESC20" ) {
-            desconto = 20
-        } else if( cupom == "FESTA10" ){
-            desconto = 10
-        }
+//         let desconto = 0
+//         if( cupom == "DESC20" ) {
+//             desconto = 20
+//         } else if( cupom == "FESTA10" ){
+//             desconto = 10
+//         }
 
-        /* let total = this.subtotalCompra - desconto
-        return total */
-        return this.subtotalCompra - desconto
+//         /* let total = this.subtotalCompra - desconto
+//         return total */
+//         return this.subtotalCompra - desconto
 
-    }
-}
+//     }
+// }
 
-const usuario = new Usuario()
+// const usuario = new Usuario()
 /* usuario.email = "ja@gmail.com"
 usuario.senha = "1234"
 
 let mensagem =usuario.logar()
 console.log(mensagem) */
 
-usuario.subtotalCompra = 500
-console.log(usuario.calcularDesconto( "FESTA10" ))
+/* usuario.subtotalCompra = 500
+console.log(usuario.calcularDesconto( "FESTA10" )) */
+
+// Pilar - Encapsulamento
+// class Carro {
+//     constructor(){
+//         this.modelo = "Gol",
+//         this.cor = "Vermelho"
+//     }
+//     frear(){
+//         /* freio com tecnologia a disco 
+//         .
+//         .
+//         .
+//         */
+//         console.log("parar o carro")
+//     }
+// }
+
+// const carro = new Carro()
+// carro.frear()
