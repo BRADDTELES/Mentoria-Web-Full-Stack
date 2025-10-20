@@ -60,7 +60,7 @@ hotel.verificarDisponibilidade = function () {
 
 
 //Criando classes (mais simples)
-class Hotel {
+/* class Hotel {
 
     constructor(){
         this.quartos = 30
@@ -72,9 +72,49 @@ class Hotel {
         return `Disponíveis: ${res}`
     }
 
+} */
+
+//const hotel = new Hotel()
+//console.log(hotel.verificarDisponibilidade())
+/* hotel.quartos = 10
+console.log(hotel.quartos) */
+
+// Pilar 1 - Abstração
+/* 
+Modelo, Entidade, Identidade, Características e Ações
+*/
+class Carro {
+    constructor(){
+        this.marca = "Volkswagem",
+        this.modelo = "Gol",
+        this.cor = "prata",
+        this.placa = "EMJ-2565"
+    }
+    ligar(){
+        console.log("Ligado")
+    }
 }
 
-const hotel = new Hotel()
-//console.log(hotel.verificarDisponibilidade())
-hotel.quartos = 10
-console.log(hotel.quartos)
+const carro = new Carro()
+carro.modelo = "Golf"
+console.log(carro.modelo)
+
+const carro2 = new Carro()
+console.log(carro2.modelo)
+
+// Loja Virtual
+class Produto {
+    constructor(){
+
+        // roupas
+        this.tamanho = "M",
+        this.cor = "Vermelho",
+        this.preco = "45,90"
+
+        // Eletronicos
+        this.altura = "50cm",
+        this.largura = "30cm"
+
+
+    }
+}
