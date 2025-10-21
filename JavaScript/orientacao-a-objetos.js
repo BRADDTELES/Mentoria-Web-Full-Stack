@@ -463,33 +463,88 @@ contarQuantidadeLetras(produto) */
 // Factory - Design Pattern (padrão de design ou padrão de projetos)
 // Padrão de projetos -> forma comum de resolver problemas
 
-const produto1 = {
-    nome: "Notebook",
-    preco: 1200
-}
+// const produto1 = {
+//     nome: "Notebook",
+//     preco: 1200
+// }
 
-const produto2 = {
-    nome: "Notebook",
-    preco: 1200
-}
+// const produto2 = {
+//     nome: "Notebook",
+//     preco: 1200
+// }
 
-const ProdutoFactory = function(nome, preco){
+// const ProdutoFactory = function(nome, preco){
 
-    //dados
+//     //dados
 
-    return {
-        nome,
-        preco,
-        recuperarAvalizacoes(){
-            console.log(`Avaliações para ${this.nome}`)
-        }
+//     return {
+//         nome,
+//         preco,
+//         recuperarAvalizacoes(){
+//             console.log(`Avaliações para ${this.nome}`)
+//         }
     
+//     }
+// }
+
+// const produto = ProdutoFactory("Notebook", 1200)
+// produto.recuperarAvalizacoes()
+
+// const produtoNovo = ProdutoFactory("Celular", 1200)
+// produtoNovo.recuperarAvalizacoes()
+// console.log(produtoNovo)
+
+// Protótipos - Prototype
+//Descendentes de Object
+Object.prototype
+
+const obj = {
+}
+
+//console.log( obj.toString() )
+console.log( obj.__proto__ )
+console.log( obj.__proto__ == Object.prototype )
+
+
+class Carro {
+    constructor(){
+        this.placa = "AMP-1230"
     }
 }
 
-const produto = ProdutoFactory("Notebook", 1200)
-produto.recuperarAvalizacoes()
+class Bmw extends Carro {
+    constructor(){
+        super()
+        this.nome = "BMW 320i"
+    }
+}
 
-const produtoNovo = ProdutoFactory("Celular", 1200)
-produtoNovo.recuperarAvalizacoes()
-console.log(produtoNovo)
+/* const objBmw = new Bmw()
+console.log(objBmw.placa)
+console.log(objBmw.nome) */
+
+// Objetos literais
+
+const veiculo = {
+    motor: "50 cavalos" // Prototype Chain - encadeamento de objetos
+}
+
+const carro = {
+    placa : "AMP-1230",
+    //motor: "2.0 Turbo",
+    __proto__ : veiculo, // relação de herança entre carro e veiculo
+    acelerar: function(){
+        console.log("Acelerar")
+    }
+}
+
+const bmw = {
+    nome : "BMW 320i",
+    motor: "300 cavalos", // Prototype Chain - encadeamento de objetos
+    __proto__ : carro // relação de herança entre bmw e carro
+}
+
+console.log( bmw.placa )
+bmw.acelerar()
+console.log( bmw.nome )
+console.log( bmw.motor )
