@@ -238,7 +238,7 @@ console.log(usuario.calcularDesconto( "FESTA10" )) */
 
 // Classe: Cao e Passaro
 
-class Animal {// superclasse - pai
+/* class Animal {// superclasse - pai
     constructor( pCor, pTamanho, pPeso ){
         this.cor = pCor
         this.tamanho = pTamanho
@@ -295,17 +295,17 @@ class Papagaio extends Passaro {
     falar(){
         console.log("falar")
     }
-}
+} */
 
 // Instancia
 //const animal = new Animal( "Amarelo", 60, 3 )
-const cao = new Cao( "Amarelo", 60, 3 , 5 )
+/* const cao = new Cao( "Amarelo", 60, 3 , 5 )
 const passaro = new Passaro( "Marrom", 45, 3 )
 const papagaio = new Papagaio( "Verde", 35, 2, true )
 
 console.log( papagaio.sabeFalar)
 console.log( papagaio.cor )
-console.log( passaro.cor)
+console.log( passaro.cor) */
 
 //cao.tamanhoOrelha = 4
 //console.log( cao.tamanhoOrelha )
@@ -337,4 +337,33 @@ cao.latir()
 passaro.correr()
 passaro.voar() */
 
+/* Objetos literais - melhorias */
+let nome = "Notebook"
+let preco = 1200
 
+//objeto literal
+const produto = {
+    nome,
+    preco: preco,
+    exibirProduto(){
+        console.log(`${this.nome}, ${this.preco}, ${this.categoria}`)
+    }
+}
+
+const pro = produto
+pro.preco = 2000
+produto.preco = 3000
+
+console.log(pro.preco)
+console.log(produto.preco)
+
+/* produto.categoria = "Eletronicos"
+produto.exibirProduto = function(){
+    console.log(`Preço: ${this.preco}`)
+}
+produto.exibirProduto() */
+// delete produto.categoria
+// produto.nome = "Alterar"
+
+// produto.exibirProduto()
+// console.log(produto.categoria) 
