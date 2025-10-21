@@ -16,15 +16,48 @@ console.log(somar(2)) */
 // console.log(somar(2, 10))
 
 //Parâmetros e retornos opcionais
-function calcularSalario(salario, desconto){
-    //desconto = isNaN(desconto) ? 0 : desconto
-    if ( salario == 0 ){
-        console.log("Salário não informado")
-        return 0
-    } else {
-        return salario - desconto
+// function calcularSalario(salario, desconto){
+//     //desconto = isNaN(desconto) ? 0 : desconto
+//     if ( salario == 0 ){
+//         console.log("Salário não informado")
+//         return 0
+//     } else {
+//         return salario - desconto
+//     }
+// }
+
+// let resultado = calcularSalario(0, 20)
+// console.log(resultado)
+
+/* Funções de Callback  */
+function processar(callbackSucesso, 
+    callbackErro){
+
+    /* 
+    ações
+    ... 
+    */
+    let resultadoProcessamento = true
+    if( resultadoProcessamento ){
+
+    }else {
+
     }
 }
 
-let resultado = calcularSalario(0, 20)
-console.log(resultado)
+const salvarResultado = function(){
+    /* 
+    ...
+    */
+    console.log("salvar resultado")
+}
+
+const erro = function(){
+    /* 
+    ...
+    */
+    console.log("erro")
+}
+
+//() => {...} Arrow function
+processar(salvarResultado, erro)
