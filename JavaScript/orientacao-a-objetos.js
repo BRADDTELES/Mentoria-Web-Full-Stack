@@ -369,12 +369,37 @@ produto.exibirProduto() */
 // console.log(produto.categoria) 
 
 /* Objetos constantes */
-const produto = {
-    nome: "Notebook"
+// const produto = {
+//     nome: "Notebook"
+// }
+
+// //Object.freeze(produto)
+// produto.nome = "Celular"
+// produto.preco = 120
+
+// console.log(produto)
+
+
+// Tratamento de erros com: Try/Catch/Throw
+function contarQuantidadeLetras( produto ){
+    try {
+        console.log( produto.nome.length )
+        console.log("teste")
+    } catch(erro) {
+        //tratarErro( erro )
+        console.log("Erro ao processar, código erro: 164")
+    } /* finally {
+        console.log("Fim da execução")
+    } */
 }
 
-//Object.freeze(produto)
-produto.nome = "Celular"
-produto.preco = 120
+function tratarErro( erro ){
+    throw new Error("Código erro: 164")
+}
 
-console.log(produto)
+const produto = {
+    nom: "Notebook",
+    preco: 1200
+}
+
+contarQuantidadeLetras(produto)
