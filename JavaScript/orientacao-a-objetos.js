@@ -381,19 +381,19 @@ produto.exibirProduto() */
 
 
 // Tratamento de erros com: Try/Catch/Throw
-function contarQuantidadeLetras( produto ){
-    try {
-        console.log( produto.nome.length )
-        console.log("teste")
-    } catch(erro) {
-        //tratarErro( erro )
-        console.log("Erro ao processar, código erro: 164")
-    } /* finally {
-        console.log("Fim da execução")
-    } */
-}
+// function contarQuantidadeLetras( produto ){
+//     try {
+//         console.log( produto.nome.length )
+//         console.log("teste")
+//     } catch(erro) {
+//         //tratarErro( erro )
+//         console.log("Erro ao processar, código erro: 164")
+//     } /* finally {
+//         console.log("Fim da execução")
+//     } */
+// }
 
-function tratarErro( erro ){
+/* function tratarErro( erro ){
     throw new Error("Código erro: 164")
 }
 
@@ -402,4 +402,28 @@ const produto = {
     preco: 1200
 }
 
-contarQuantidadeLetras(produto)
+contarQuantidadeLetras(produto) */
+
+// Funções construtoras
+/* class Hotel {
+
+} */
+
+const Hotel = function(){
+    this.nome = "Hotel do Jamilton"
+    this.quantidadeSuites = 30
+    this.suitesOcupadas = 25
+
+    this.reservar = function(){
+        this.suitesOcupadas++
+        console.log("ocupadas: " + this.suitesOcupadas)
+    }
+}
+
+const hotel = new Hotel()
+//typeof Hotel
+hotel.quantidadeSuites
+console.log(hotel.quantidadeSuites)
+hotel.reservar()
+hotel.nome = "José"
+console.log(hotel.nome)
