@@ -429,32 +429,67 @@ contarQuantidadeLetras(produto) */
 // console.log(hotel.nome)
 
 // Funções construtoras - encapsulamento
-const Hotel = function(){
+// const Hotel = function(){
 
-    this.nome = "Hotel do Jamilton"
-    this.quantidadeSuites = 30
-    let suitesOcupadas = 25
+//     this.nome = "Hotel do Jamilton"
+//     this.quantidadeSuites = 30
+//     let suitesOcupadas = 25
 
-    this.reservar = function(){
-        if( suitesOcupadas < this.quantidadeSuites ){
-            suitesOcupadas++
-            console.log("ocupadas: " + suitesOcupadas)
-        }else {
-            console.log("Estamos lotados")
+//     this.reservar = function(){
+//         if( suitesOcupadas < this.quantidadeSuites ){
+//             suitesOcupadas++
+//             console.log("ocupadas: " + suitesOcupadas)
+//         }else {
+//             console.log("Estamos lotados")
+//         }
+//     }
+// }
+
+// const hotel = new Hotel()
+// //typeof Hotel
+// hotel.quantidadeSuites
+// console.log(hotel.quantidadeSuites)
+// hotel.nome = "José"
+// console.log(hotel.nome)
+// hotel.reservar()
+// hotel.reservar()
+// hotel.reservar()
+// hotel.reservar()
+// hotel.reservar()
+// hotel.suitesOcupadas = 20
+// hotel.reservar()
+
+//Funções Factory
+// Factory - Design Pattern (padrão de design ou padrão de projetos)
+// Padrão de projetos -> forma comum de resolver problemas
+
+const produto1 = {
+    nome: "Notebook",
+    preco: 1200
+}
+
+const produto2 = {
+    nome: "Notebook",
+    preco: 1200
+}
+
+const ProdutoFactory = function(nome, preco){
+
+    //dados
+
+    return {
+        nome,
+        preco,
+        recuperarAvalizacoes(){
+            console.log(`Avaliações para ${this.nome}`)
         }
+    
     }
 }
 
-const hotel = new Hotel()
-//typeof Hotel
-hotel.quantidadeSuites
-console.log(hotel.quantidadeSuites)
-hotel.nome = "José"
-console.log(hotel.nome)
-hotel.reservar()
-hotel.reservar()
-hotel.reservar()
-hotel.reservar()
-hotel.reservar()
-hotel.suitesOcupadas = 20
-hotel.reservar()
+const produto = ProdutoFactory("Notebook", 1200)
+produto.recuperarAvalizacoes()
+
+const produtoNovo = ProdutoFactory("Celular", 1200)
+produtoNovo.recuperarAvalizacoes()
+console.log(produtoNovo)
