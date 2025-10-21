@@ -338,24 +338,24 @@ passaro.correr()
 passaro.voar() */
 
 /* Objetos literais - melhorias */
-let nome = "Notebook"
-let preco = 1200
+/* let nome = "Notebook"
+let preco = 1200 */
 
 //objeto literal
-const produto = {
-    nome,
-    preco: preco,
-    exibirProduto(){
-        console.log(`${this.nome}, ${this.preco}, ${this.categoria}`)
-    }
-}
+// const produto = {
+//     nome,
+//     preco: preco,
+//     exibirProduto(){
+//         console.log(`${this.nome}, ${this.preco}, ${this.categoria}`)
+//     }
+// }
 
-const pro = produto
-pro.preco = 2000
-produto.preco = 3000
+// const pro = produto
+// pro.preco = 2000
+// produto.preco = 3000
 
-console.log(pro.preco)
-console.log(produto.preco)
+// console.log(pro.preco)
+// console.log(produto.preco)
 
 /* produto.categoria = "Eletronicos"
 produto.exibirProduto = function(){
@@ -367,3 +367,14 @@ produto.exibirProduto() */
 
 // produto.exibirProduto()
 // console.log(produto.categoria) 
+
+/* Objetos constantes */
+const produto = {
+    nome: "Notebook"
+}
+
+//Object.freeze(produto)
+produto.nome = "Celular"
+produto.preco = 120
+
+console.log(produto)
