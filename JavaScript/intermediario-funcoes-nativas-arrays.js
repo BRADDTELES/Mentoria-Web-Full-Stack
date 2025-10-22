@@ -224,4 +224,42 @@ console.log( arrayTexto ) */
 // lista.percorrer(funcao)
 
 
+/* --- Array: Map --- */
+/* const pessoas = [
+    "Jamilton", 'Ana', "Maria"
+]
+
+let funcao = function(item, indece, arr){
+    return {nome: item}
+}
+
+const novoArray = pessoas.map(funcao)
+console.log(novoArray) */
+
+//Desafio
+// 1 dolar = 3 reais
+// const produtosDolar = [
+//     {produto: "Notebook", preco: 1200, moeda: "$"},
+//     {produto: "Celualr", preco: 800, moeda: "$"}
+// ]
+
+// /* const novoArray = produtosDolar.map(function(item, indice, arr){
+//     let preco = item.preco * 3
+//     return {
+//         produto: item.produto,
+//         preco,
+//         moeda: "R$"
+//     }
+// }) */
+//                                 //arrow function
+// const novoArray = produtosDolar.map(item => {
+//     let preco = item.preco * 3
+//     return {
+//         produto: item.produto,
+//         preco,
+//         moeda: "R$"
+//     }
+// })
+// console.log(novoArray)
+
 
