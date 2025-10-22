@@ -29,6 +29,9 @@ console.log(somar(2)) */
 // let resultado = calcularSalario(0, 20)
 // console.log(resultado)
 
+
+
+
 /* Funções de Callback  */
 // function processar(callbackSucesso, callbackErro){
 //     /* várias operações, implemetações e ações... */
@@ -53,6 +56,9 @@ console.log(somar(2)) */
 
 // //() => {...} Arrow function
 // processar(salvarResultado, erro)
+
+
+
 
 /* ---Funções Nativas - Manipulação de Textos--- */
 /* const nome = {
@@ -100,6 +106,9 @@ console.log(somar(2)) */
 
 // console.log(a.concat(" ", b, " ", c)) // concatenar strings com espaços entre elas
 
+
+
+
 /* --- Funções Nativas - Matemática --- */
 // let numero = 280.50
 
@@ -112,6 +121,9 @@ console.log(somar(2)) */
 // console.log( Math.max(15,10) ) // retorna o maior valor
 // console.log( Math.pow(2, 10) ) // 2 elevado a 10
 // console.log( Math.sqrt(12) ) // raiz quadrada
+
+
+
 
 /* --- Funções Nativas - Datas --- */
 // const data = new Date()
@@ -147,6 +159,8 @@ let mi = data.getMinutes()
 let s = data.getSeconds()
 console.log(`hora: ${h}:${mi}:${s}`)*/
 
+
+
 /* --- Saiba mais - Array --- */
 // console.log(typeof [])
 // console.log(typeof Array)
@@ -165,6 +179,8 @@ console.log(`hora: ${h}:${mi}:${s}`)*/
 // console.log(nomes)
 // console.log(nomes.length)
 // console.log(nomes.sort()) // orneda o array em ordem alfabetica
+
+
 
 /* --- Array - Métodos úteis --- */
 // const estados = ["São Paulo", "Ceará", "Rio de Janeiro", "Bahia", "Minas Gerais"]
@@ -188,6 +204,7 @@ let texto = usuarios.join()
 let arrayTexto = texto.split(",")
 
 console.log( arrayTexto ) */
+
 
 
 /* --- Array: ForEach --- */
@@ -222,6 +239,8 @@ console.log( arrayTexto ) */
 // }
 
 // lista.percorrer(funcao)
+
+
 
 
 /* --- Array: Map --- */
@@ -263,3 +282,50 @@ console.log(novoArray) */
 // console.log(novoArray)
 
 
+
+/* --- Array: Filter --- */
+// const usuarios = [
+//     {nome: "Jamilton", idade: 32},
+//     {nome: "Ana", idade: 16},
+//     {nome: "Maria", idade: 40}
+// ]
+
+// const funcao = function(item, indice, arr){
+//     /* if( item.idade >= 18 ){
+//         return true
+//     }else{
+//         return false
+//     } */
+//     //return item.idade >= 18 ? true : false //true ou false]
+    
+//     return item.idade >= this.filtro
+// }
+// const filtro = {
+//     filtro: 18
+// }
+// const usuariosMaiorIdade = usuarios.filter(funcao, filtro) // filter, faz um for para percorrer o array
+
+// console.log(usuariosMaiorIdade)
+
+//Desafio
+// const carros = [
+//     {nome: 'Gol', marca: 'volkswagem'},
+//     {nome: 'iX35', marca: 'hyundai'},
+//     {nome: 'Santa Fé', marca: 'hyundai'},
+//     {nome: 'Polo', marca: 'volkswagem'},
+// ]
+
+// const funcao = function(item){
+//     return item.marca == this.filtro
+// }
+// const filtro = {
+//     filtro: "hyundai"
+// }
+// // const carrosFiltrado = carros.filter(funcao, filtro)
+// // console.log(carrosFiltrado)
+
+// //Arrow Function
+// const carrosFiltrado = carros.filter(
+//     carro => carro.marca == 'hyundai'
+// )
+// console.log(carrosFiltrado)
