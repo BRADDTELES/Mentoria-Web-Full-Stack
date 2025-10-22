@@ -166,5 +166,26 @@ console.log(`hora: ${h}:${mi}:${s}`)*/
 // console.log(nomes.length)
 // console.log(nomes.sort()) // orneda o array em ordem alfabetica
 
+/* --- Array - Métodos úteis --- */
+// const estados = ["São Paulo", "Ceará", "Rio de Janeiro", "Bahia", "Minas Gerais"]
 
+
+/* Remover elementos do array */
+// console.log( estados.pop() ) // remover o ultimo elemento
+// console.log( estados )
+// console.log( estados.shift() ) // remover o primeiro elemento
+// console.log( estados )
+// console.log( estados.push("teste") )
+// console.log( estados.unshift("teste") )
+
+/* Retorna novo array */
+//const novo = estados.splice(1, 1, "teste1") //emendar
+// const novo = estados.slice(2, 5) //cortar
+
+/* Converte Array / String */
+/* const usuarios = ["Jamilton", 'Ana', "Carla"]
+let texto = usuarios.join()
+let arrayTexto = texto.split(",")
+
+console.log( arrayTexto ) */
 
