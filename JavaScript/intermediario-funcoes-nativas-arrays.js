@@ -113,3 +113,40 @@ console.log(somar(2)) */
 // console.log( Math.pow(2, 10) ) // 2 elevado a 10
 // console.log( Math.sqrt(12) ) // raiz quadrada
 
+/* --- Funções Nativas - Datas --- */
+const data = new Date()
+//console.log(data.toString())
+
+/* console.log( data.getDate() ) // dia do mês
+console.log( data.getMonth() + 1 ) // mês
+console.log( data.getFullYear() ) // ano
+let d = data.getDate()
+let m = data.getMonth() + 1
+let a = data.getFullYear()
+console.log(`data: ${d}/${m}/${a}`)
+
+let h = data.getHours()
+let mi = data.getMinutes()
+let s = data.getSeconds()
+console.log(`hora: ${h}:${mi}:${s}`)
+ */
+//Operações com datas
+//console.log(data.setDate(data.getDate() + 300))
+// console.log(data.setMonth(data.getMonth() + 2 ))
+// console.log(data.setFullYear(data.getFullYear() + 2))
+/* let d = data.getDate()
+let m = data.getMonth() + 1
+let a = data.getFullYear()
+console.log(`data: ${d}/${m}/${a}`) */
+
+// console.log( data.setHours(data.getHours() + 2))
+// console.log( data.setMinutes(data.getMinutes() + 10))
+// console.log( data.setSeconds(data.getSeconds() + 30))
+/* let h = data.getHours()
+let mi = data.getMinutes()
+let s = data.getSeconds()
+console.log(`hora: ${h}:${mi}:${s}`)*/
+
+
+
+
