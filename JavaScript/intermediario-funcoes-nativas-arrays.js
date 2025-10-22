@@ -30,26 +30,86 @@ console.log(somar(2)) */
 // console.log(resultado)
 
 /* Funções de Callback  */
-function processar(callbackSucesso, callbackErro){
-    /* várias operações, implemetações e ações... */
+// function processar(callbackSucesso, callbackErro){
+//     /* várias operações, implemetações e ações... */
 
-    let resultadoProcessamento = true
-    if( resultadoProcessamento ){
-        callbackSucesso()
-    } else {
-        callbackErro()
-    }
-}
+//     let resultadoProcessamento = true
+//     if( resultadoProcessamento ){
+//         callbackSucesso()
+//     } else {
+//         callbackErro()
+//     }
+// }
 
-const salvarResultado = function(){
-    /* várias ações de sucesso... */
-    console.log("salvar resultado")
-}
+// const salvarResultado = function(){
+//     /* várias ações de sucesso... */
+//     console.log("salvar resultado")
+// }
 
-const erro = function(){
-    /* várias ações de erro... */
-    console.log("erro")
-}
+// const erro = function(){
+//     /* várias ações de erro... */
+//     console.log("erro")
+// }
 
-//() => {...} Arrow function
-processar(salvarResultado, erro)
+// //() => {...} Arrow function
+// processar(salvarResultado, erro)
+
+/* ---Funções Nativas - Manipulação de Textos--- */
+/* const nome = {
+    texto: "ja",
+    length: 2,
+    chartAt(){}
+} */
+//let nome = "carro do jamilton"
+
+// console.log(nome.length) // contar a quantidade de caracteres
+// console.log(nome.charAt(4)) // retorna o caractere na posição informada 
+// console.log(nome.replace("jamilton", "pedro")) // substituir um caractere por outro
+
+// let frase = "O sucesso é ir de fracasso em fracasso sem perder o entusiasmo"
+// frase.substr(0, 30) // foi depreciada, agora usaremos slice ou substring
+// console.log(frase.substring(0, 30) + "...")
+
+// let nome = "jamilton damasceno"
+// let resultado = nome.split(" ") // transformar uma string em um array, separando por espaços
+// console.log(resultado)
+
+// let nome = "jamilton"
+// let sobrenome = "damasceno"
+// let s = sobrenome.slice(0, 6)
+
+// let email = nome + s + "@empresa.com.br"
+
+// console.log(email)
+// let pesquisa = "PEdro SILva"
+// let itemSalvoBD = "pedro silva"
+// //console.log(pesquisa.toUpperCase()) // formata as letras para maiusculas
+// let item = pesquisa.toLowerCase()
+// if(itemSalvoBD == item) {
+//     console.log("Achei: " + item)
+// } else {
+//     console.log("Item não encontrado")
+// }
+
+// let nome = "Pedro Silva    -"
+// console.log( nome.trim() ) // remover espaços em branco
+
+// let a = "Olá"
+// let b = "Jamilton"
+// let c = "Damasceno"
+
+// console.log(a.concat(" ", b, " ", c)) // concatenar strings com espaços entre elas
+
+/* --- Funções Nativas - Matemática --- */
+// let numero = 280.50
+
+// console.log( Math.PI ) // retorna o valor de PI
+// console.log( Math.ceil(numero) ) // arredondar para cima
+// console.log( Math.floor(numero) ) // arredondar para baixo
+// console.log( Math.round(numero) ) // arredondar para o inteiro mais prático
+// console.log( Math.random() * 100 ) // gerar um número aleatório entre 0 e 1
+// console.log( Math.min(15,10) ) // retorna o menor valor
+// console.log( Math.max(15,10) ) // retorna o maior valor
+// console.log( Math.pow(2, 10) ) // 2 elevado a 10
+// console.log( Math.sqrt(12) ) // raiz quadrada
+
