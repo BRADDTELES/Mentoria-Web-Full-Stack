@@ -114,7 +114,7 @@ console.log(somar(2)) */
 // console.log( Math.sqrt(12) ) // raiz quadrada
 
 /* --- Funções Nativas - Datas --- */
-const data = new Date()
+// const data = new Date()
 //console.log(data.toString())
 
 /* console.log( data.getDate() ) // dia do mês
@@ -147,6 +147,24 @@ let mi = data.getMinutes()
 let s = data.getSeconds()
 console.log(`hora: ${h}:${mi}:${s}`)*/
 
+/* --- Saiba mais - Array --- */
+// console.log(typeof [])
+// console.log(typeof Array)
+// console.log(typeof new Array)
+
+// const nomes = ["Jamilton", "Maria"]
+// const frutas = new Array("Morango", "Banana")
+
+// console.log(frutas[0])
+
+// const nomes = ["Jamilton", "Maria", 'Ana']
+// const nomes = [3, 2, 1]
+// nomes.push("Pedro")
+// delete nomes[0]
+// nomes[0] = 'Teste'
+// console.log(nomes)
+// console.log(nomes.length)
+// console.log(nomes.sort()) // orneda o array em ordem alfabetica
 
 
 
