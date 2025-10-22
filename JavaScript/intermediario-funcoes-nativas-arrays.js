@@ -30,32 +30,24 @@ console.log(somar(2)) */
 // console.log(resultado)
 
 /* Funções de Callback  */
-function processar(callbackSucesso, 
-    callbackErro){
+function processar(callbackSucesso, callbackErro){
+    /* várias operações, implemetações e ações... */
 
-    /* 
-    ações
-    ... 
-    */
     let resultadoProcessamento = true
     if( resultadoProcessamento ){
-
-    }else {
-
+        callbackSucesso()
+    } else {
+        callbackErro()
     }
 }
 
 const salvarResultado = function(){
-    /* 
-    ...
-    */
+    /* várias ações de sucesso... */
     console.log("salvar resultado")
 }
 
 const erro = function(){
-    /* 
-    ...
-    */
+    /* várias ações de erro... */
     console.log("erro")
 }
 
