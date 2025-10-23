@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecionando elementos</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+
+<body>
+
+    <div>Irmão anterior</div>
+
+    <div id="itens">
+        <p>Primeiro elemento</p>
+        <p>Segundo elemento</p>
+        <p>Terceiro elemento</p>
+        <p>Quarto elemento</p>
+    </div>
+    
+    <div>Próximo irmão</div>
+
+    <script type="text/javascript">
+
+        const lista = document.querySelector('div#itens')
+        // console.log(lista)
+        // console.log(lista.parentNode) // mostra quem é o pai do elemento (pega espaços)
+        // console.log(lista.childNodes[3]) // mostra quem é o filho do elemento (pega espaços)
+        // console.log(lista.firstChild) // seleiona o primeiro filho do elemento (pega espaços)
+        // console.log(lista.lastChild) // seleiona o ultimo filho do elemento (pega espaços)
+        // console.log(lista.nextSibling) // mostra quem é o irmão posterior do elemento (pega espaços)
+        // console.log(lista.previousSibling) // mostra quem é o irmão anterior do elemento (pega espaços)
+        // console.log(lista.children) // mostra todos os filhos do elemento (não pega espaços)
+        // console.log(lista.firstElementChild) // seleciona o primeiro filho do elemento (não pega espaços)
+        // console.log(lista.lastElementChild) // seleciona o ultimo filho do elemento (não pega espaços)
+        console.log(lista.nextElementSibling) // mostra quem é o irmão posterior do elemento (não pega espaços)
+        console.log(lista.previousElementSibling) // mostra quem é o irmão anterior do elemento (não pega espaços)
+
+    </script>
+
+</body>
+
+</html>
