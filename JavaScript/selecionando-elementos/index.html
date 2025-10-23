@@ -11,11 +11,20 @@
     <div id="destaque">Área de conteúdo</div>
     <h1 class="vermelho">Título do site</h1>
     <p>Subtitulo</p>
+    <div>Área de conteúdo 2</div>
+    <h1 class="vermelho">Título do site 2</h1>
 
     <ul>
         <li class="primeiro">Item 1</li>
         <li>Item 2</li>
     </ul>
+    <ul>
+        <li class="primeiro">Item 1 alterado</li>
+        <li>Item 2 alterado</li>
+    </ul>
+
+    <input type="text" name="nome">
+    <input type="text" name="nome">
 
     <button onclick="executar()">Clique aqui</button>
 
@@ -28,8 +37,21 @@
         }
 
         //const obj = document.getElementById('destaque')
-        const obj = document.querySelector('li.primeiro');
+        //const obj = document.querySelector('li.primeiro');
         //console.log(obj.textContent);
+        
+        //const colecao = document.getElementsByTagName('li')
+        // const obj = document.getElementsByClassName('vermelho')
+        // const obj = document.getElementsByName('nome')
+        const obj = document.querySelectorAll('li.primeiro')
+        /* for( let i = 0; i < obj.length; i++ ){
+            console.log(obj[i].textContent);
+        } */
+        /* const lista = Array.from(colecao)
+        lista.forEach((item, i) => {
+            console.log(item.textContent)
+        })*/
+        console.log(obj.item(1).textContent); 
 
     </script>
 
