@@ -11,6 +11,22 @@
     background-color: black;
 } */
 
+body {
+    font-size: 25px;
+}
+
 div#itens {
     background-color: orange;
+}
+
+.vermelho {
+    background-color: red;
+}
+
+.laranja {
+    background-color: orange;
+}
+
+.texto {
+    color: white;
 }
