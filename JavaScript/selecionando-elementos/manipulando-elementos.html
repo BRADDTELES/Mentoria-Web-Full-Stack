@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecionando elementos</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+
+<body>
+
+    <!-- <div id="conteudo">conteudo</div> -->
+
+    <ul id="itens">
+        <li>Pedro</li>
+        <li>Ana</li>
+    </ul>
+
+    <hr>
+
+    <p id="item-clonar">Tamires</p>
+
+    <button onclick="adicionar()">adicionar</button>
+    <button onclick="remover()">remover</button>
+
+    <script type="text/javascript">
+
+        // const obj = document.getElementById('conteudo')
+        // obj.textContent = "<p style='color: red'>Jamilton</p>"
+        // obj.innerHTML = "<p style='color: red'>Jamilton</p>"
+        
+        const ul = document.getElementById('itens')
+        const li = document.createElement('li')
+
+        /* const ulFilha = document.createElement('ul')
+        const liFilha = document.createElement('li')
+        liFilha.textContent = "li criada"
+        ulFilha.appendChild(liFilha) */
+
+        // li.setAttribute('teste', '10')
+        // li.textContent = "Jamilton"
+        const texto = document.createTextNode('Jamilton')
+        function adicionar(){
+
+            /* li.appendChild(texto)
+            ul.appendChild(li)    */
+
+            li.appendChild(texto)
+            ul.insertBefore(li, ul.children[1])
+            
+            const itemClonar = document.getElementById('item-clonar')
+            const item = itemClonar.cloneNode(true)
+            ul.appendChild(item)
+        }
+        function remover() {
+
+            // li.appendChild(texto)
+            ul.removeChild(li)
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>
