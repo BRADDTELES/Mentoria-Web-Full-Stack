@@ -26,6 +26,10 @@ Olá! Sou um entusiasta da tecnologia em transição de carreira para a área de
 
 Sou um grande apaixonado por metodologias ágeis, especialmente **SCRUM**, e acredito na importância de um processo de desenvolvimento bem gerenciado. Vindo do desenvolvimento Android, trago comigo um forte apreço por **arquitetura de software** e boas práticas como **Clean Architecture**, **MVVM** e **MVP**, buscando sempre criar código limpo, organizado e escalável. Além disso, tenho um forte interesse por **UI/UX**, utilizando o **Figma** para idealizar interfaces intuitivas que proporcionem uma excelente experiência ao usuário. Meu objetivo é me tornar um Desenvolvedor Full Stack capaz de contribuir em todas as etapas do ciclo de vida de um projeto, desde a concepção até a entrega.
 
+## Resumo
+
+Repositório de aprendizado do Desenvolvimento Web Full Stack, documentando a jornada de estudos em HTML, CSS, JavaScript, Node.js, TypeScript, React, Next.js e tecnologias relacionadas. Contém exercícios práticos, projetos de exemplo e documentação de conceitos aprendidos durante a formação.
+
 ## Tecnologias
 
 Aqui estão as tecnologias que estou estudando e utilizando nesta formação:
