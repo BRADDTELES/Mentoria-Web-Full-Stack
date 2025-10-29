@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Teclado</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+
+<body>
+
+    <input type="text" id="entrada">
+
+    <script type="text/javascript">
+
+        function executar() {
+            console.log("Executar")
+        }
+
+        const obj = document.getElementById('entrada')
+        // obj.addEventListener('keydown', executar)
+        // obj.addEventListener('keyup', executar)
+        obj.addEventListener('keypress', executar)
+        
+
+    </script>
+
+</body>
+
+</html>
