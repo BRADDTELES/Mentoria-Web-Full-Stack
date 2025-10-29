@@ -77,7 +77,7 @@ Abaixo estão os módulos da formação. Conforme eu for concluindo cada um, adi
 - [x] 📝 **HTML** 
 - [x] 🎨 **CSS**
 - [x] 🐙 **Git e GitHub**
-- [ ] 💻 **JavaScript** (Em andamento)
+- [x] 💻 **JavaScript**
 - [ ] 🚀 **Node.js**
 - [ ] 🔷 **TypeScript**
 - [ ] ⚛️ **React**
