@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Blur</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+
+<body>
+
+    
+    <input type="text" id="entrada" placeholder="Nome">
+    <input type="text" placeholder="Senha">
+
+    <script type="text/javascript">
+
+        function executar() {
+            console.log("Executar")
+            obj.focus()
+        }
+        function keydown() {
+            console.log("keydown")
+        }
+
+        const obj = document.getElementById('entrada')
+        // obj.addEventListener('focus', executar)
+        obj.addEventListener('blur', executar)
+        // obj.addEventListener('keydown', keydown)
+        
+        
+
+    </script>
+
+</body>
+
+</html>
