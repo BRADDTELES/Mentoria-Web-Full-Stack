@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Mouse</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+
+<body>
+
+    <button id="botao">Clique</button>
+    <h1 id="h1">Clique</h1>
+    <input type="text" id="entrada">
+
+    <script type="text/javascript">
+
+        function executar() {
+            console.log("Executar")
+        }
+        // function mouseover() {
+        //     console.log("mouseover")
+        // }
+        function keydown() {
+            console.log("keydown")
+        }
+
+        const obj = document.getElementById('entrada')
+        obj.addEventListener('click', executar)
+        obj.addEventListener('keydown', keydown)
+        // obj.addEventListener('dblclick', duplo)
+        // obj.addEventListener('mousedown', executar)
+        // obj.addEventListener('mouseup', executar)
+        // obj.addEventListener('mousemove', executar)
+        // obj.addEventListener('mouseover', mouseover)
+        // obj.addEventListener('mouseout', executar)
+        
+
+    </script>
+
+</body>
+
+</html>
