@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Formulário</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+
+<body>
+
+    
+    <form name="formulario">
+
+        <input type="text" name="entrada" placeholder="nome">
+        <hr>
+        sexo:
+        <select name="selecao">
+            <option>--</option>
+            <option>Masculino</option>
+            <option>Feminino</option>
+        </select>
+        <hr>
+        <input type="radio" name="idade" value="0-18"> 0 - 18
+        <br>
+        <input type="radio" name="idade" value="30"> Acima de 30
+        <br>
+        
+        <hr>
+        <input type="checkbox" name="termo"> Aceita o Termo
+        <br>
+        
+        <hr>
+        <input type="submit" value="Salvar">
+        <input type="reset" value="Limpar">
+        <br>
+
+    </form>
+
+    <script type="text/javascript">
+
+        function executar() {
+            console.log("Executar")
+        }
+        function submit(event) {
+            // console.log(event)
+            if(entrada.value == ""){
+                console.log("Digite o nome")
+                event.preventDefault()
+            }
+        }
+        
+        const form = document.formulario
+        const entrada = form.entrada
+        // entrada.addEventListener('input', executar)
+        // entrada.addEventListener('cut', executar)
+        // entrada.addEventListener('copy', executar)
+        // entrada.addEventListener('paste', executar)
+        // entrada.addEventListener('select', executar)
+
+        const selecao = form.selecao
+        // selecao.addEventListener('change', executar)
+        const radio = form.idade
+        // console.log(radio.length)
+        // radio[0].addEventListener('change', executar)
+        // radio[1].addEventListener('change', executar)
+        
+        const checkbox = form.termo
+        // checkbox.addEventListener('change', executar)
+
+        // form.addEventListener('submit', submit)
+        form.addEventListener('reset', executar)
+        
+
+    </script>
+
+</body>
+
+</html>
