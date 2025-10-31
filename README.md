@@ -78,8 +78,8 @@ Abaixo estão os módulos da formação. Conforme eu for concluindo cada um, adi
 - [x] 🎨 **CSS**
 - [x] 🐙 **Git e GitHub**
 - [x] 💻 **JavaScript**
-- [ ] 🚀 **Node.js**
-- [ ] 🔷 **TypeScript**
+- [x] 🚀 **Node.js**
+- [ ] 🔷 **TypeScript** (Em andamento)
 - [ ] ⚛️ **React**
 - [ ] ▶️ **Next.js**
 - [ ] 💨 **Tailwind CSS**
