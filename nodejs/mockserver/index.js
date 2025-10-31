@@ -8,6 +8,6 @@ const server = createServer((req, res) => {
 });
 
 server.listen(port, hostname, () => {
-  console.log(`Servidor em execução: http://${hostname}:${port}/`);
+  console.log(`Dist em execução: http://${hostname}:${port}/`);
 });
 
