@@ -17,6 +17,12 @@ const mockData = JSON.stringify([
         title: 'Robô Selvagem', 
         genre: 'Aventura, Animação, Comédia, Família', 
         synopsis: 'Uma nave naufraga numa terra desabitada e dá início à aventura épica do robô Roz, a última unidade das chamadas ROZZUM ainda funcional e inteligente. Preso nesta ilha aparentemente sozinho, Roz precisa sobreviver às intempéries da floresta. Sua única esperança é se adaptar ao ambiente hostil e avesso às suas programações. Para isso, Roz passa a conviver com os animais aprendendo sobre a vida na selva e os modos de sobrevivência na natureza. É durante essa exploração que Roz encontra um filhote de ganso e estabelece como missão cuidá-lo. Desse laço inesperado com o bicho abandonado, Roz se aproxima de uma realidade nova e instigante, construindo uma relação harmoniosa com os animais nativos. Do mesmo diretor de Lilo & Stitch e Como Treinar o Seu Dragão, Robô Selvagem é uma história comovente sobre a convivência entre tecnologia e natureza e o significado de estar vivo.'
+    },
+    {
+        id: '2da13f8f-9c45-4970-af69-1e221435b7ab', 
+        title: 'What is Lorem Ipsum?', 
+        genre: 'Genero de Teste', 
+        synopsis: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
     }
 ])
 
@@ -24,6 +30,9 @@ const hostname = 'localhost';
 const port = 3001;
 
 const server = createServer((req, res) => {
+
+    // CORS
+    res.setHeader("Access-Control-Allow-Origin", "*")
 
     // Cabeçalho da requisição
     res.setHeader('Content-Type', 'application/json');
