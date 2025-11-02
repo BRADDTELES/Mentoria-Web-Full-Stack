@@ -1,6 +1,7 @@
 "use strict";
-const nome = "Danillo";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.sum = sum;
 function sum(a, b) {
-    return a + b;
+    console.log("Dentro do escopo do módulo");
+    return { result: a + b };
 }
-console.log(sum(2, 2));

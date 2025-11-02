@@ -1,6 +1,6 @@
-const nome = "Danillo"
-function sum(a: number, b: number) {
-    return a + b;
+export function sum(a: number, b: number) {
+  console.log('Dentro do escopo do módulo');
+  return {
+    result: a + b,
+  };
 }
-
-console.log(sum(2,2));
