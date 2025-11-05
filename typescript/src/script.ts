@@ -8,6 +8,6 @@
 /* export function bootstrap() {
   console.log('Script carregado com sucesso e de forma automática!');
   } */
-import { bootstrap } from './modules/basic-types/type-null-and-undefined.js';
+import { bootstrap } from './modules/basic-types/type-enum.js';
 
 export { bootstrap };

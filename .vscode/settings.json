@@ -3,5 +3,5 @@
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "files.eol": "\n",
-  "editor.fontSize": 18
+  "editor.fontSize": 15
 }
