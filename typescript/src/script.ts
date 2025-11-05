@@ -8,6 +8,6 @@
 /* export function bootstrap() {
   console.log('Script carregado com sucesso e de forma automática!');
   } */
-import { bootstrap } from './modules/basic-types/type-symbol.js';
+import { bootstrap } from './modules/basic-types/intersection-types.js';
 
 export { bootstrap };
