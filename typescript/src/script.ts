@@ -1,13 +1,3 @@
-/* export function sum(a: number, b: number) {
-  console.log('Dentro do escopo do módulo');
-  return {
-    result: a + b,
-  };
-} */
-
-/* export function bootstrap() {
-  console.log('Script carregado com sucesso e de forma automática!');
-  } */
-import { bootstrap } from './modules/basic-types/intersection-types.js';
+import { bootstrap } from './modules/narrowing/typeof.js';
 
 export { bootstrap };
