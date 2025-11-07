@@ -1,3 +1,3 @@
-import { bootstrap } from './modules/narrowing/typeof.js';
+import { bootstrap } from './modules/narrowing/truthy-and-falsy.js';
 
 export { bootstrap };
