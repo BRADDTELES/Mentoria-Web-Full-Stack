@@ -1,2 +1,2 @@
-import { bootstrap } from './modules/narrowing/instaceof.js';
+import { bootstrap } from './modules/narrowing/in.js';
 export { bootstrap };
