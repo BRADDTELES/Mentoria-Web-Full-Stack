@@ -1,5 +1,5 @@
 export const bootstrap = (): void => {
-  /* Implements */
+  /* Implements e Declaration Merging*/
   interface Resume {
     fullName: string;
     email: string;
@@ -10,6 +10,11 @@ export const bootstrap = (): void => {
   interface Skill {
     name: string;
     level: 'beginner' | 'intermediate' | 'advanced';
+  }
+
+  interface Resume {
+    dateOfBirth?: Date,
+    sumary?: string
   }
 
   class MyResume implements Resume {
@@ -35,6 +40,8 @@ export const bootstrap = (): void => {
   myResume.addSkill({ name: 'JavaScript', level: 'advanced' });
   myResume.addSkill({ name: 'TypeScript', level: 'advanced' });
   console.log(myResume);
+
+
 
   /* const MyResume: Resume = {
     fullName: 'Jorge Sant Ana',
