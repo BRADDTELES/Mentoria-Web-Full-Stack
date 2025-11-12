@@ -1,2 +1,2 @@
-import { bootstrap } from './modules/classes/static-typing.js';
+import { bootstrap } from './modules/classes/visibility-operators-p1.js';
 export { bootstrap };
