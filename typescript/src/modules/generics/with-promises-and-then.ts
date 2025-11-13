@@ -1,27 +1,43 @@
 export const bootstrap = (): void => {
-    //Promise
-    const promise = new Promise((resolve, reject) => {
-        if(false) {
-            reject('Rejeitada')
-        }
+  interface Game {
+    id: number;
+    title: string;
+    genre: string;
+    year: number;
+  }
 
-        resolve('Resolvida')
+  // Type Predicate
+  function isGameArray(data: any): data is Game[] {
+    return (
+      Array.isArray(data) &&
+      data.every(
+        (item) =>
+          typeof item.id === 'number' &&
+          typeof item.title === 'string' &&
+          typeof item.genre === 'string' &&
+          typeof item.year === 'number',
+      )
+    );
+  }
+
+  fetch('https://argus-academy.com/mock/api/games/')
+    .then((response) => {
+      if (!response.ok) {
+        console.error(
+          'Error HTTP: ',
+          `${response.status} - ${response.statusText}`,
+        );
+      }
+
+      // Type Assertion
+      //return response.json() as Promise<Array<Game>>;
+      return response.json();
     })
-
-    // Função assíncrona (Promise)
-    async function promiseFunction() {
-        return true
-    }
-
-    promiseFunction()
-    Response
-    fetch('https://argus-academy.com/mock/api/games/')
-    .then(response => {
-        if( !response.ok ) {
-            console.error('Error HTTP: ', `${response.status} - ${response.statusText}`)
-        }
-        response.json().then( data => console.log(data) )
-    })
-    // async/await
-    // then
-}
+    .then((data) => {
+      if (isGameArray(data)) {
+        data.forEach((game) => console.log(game.title))
+      } else {
+        console.error('Tipo de dado inesperado!');
+      }
+    });
+};
