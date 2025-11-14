@@ -1,73 +1,44 @@
+import { isGameArray, isCarArray } from '../../utils/typePredicates.js';
+
 export const bootstrap = (): void => {
-  interface Game {
-    id: number;
-    title: string;
-    genre: string;
-    year: number;
+  function fetchData<T>(
+    url: string,
+    typePredicateCallback: (data: any) => boolean,
+  ): Promise<T | null> {
+    return fetch(url)
+      .then((response) => {
+        if (!response.ok) {
+          console.error(
+            'Error HTTP: ',
+            `${response.status} - ${response.statusText}`,
+          );
+        }
+        return response.json();
+      })
+      .then((data) => {
+        if (typePredicateCallback(data)) {
+          return data as T;
+        } else {
+          return null;
+        }
+      });
   }
 
-  // Type Predicate
-  function isGameArray(data: any): data is Game[] {
-    return (
-      Array.isArray(data) &&
-      data.every(
-        (item) =>
-          typeof item.id === 'number' &&
-          typeof item.title === 'string' &&
-          typeof item.genre === 'string' &&
-          typeof item.year === 'number',
-      )
-    );
-  }
+  const respGames = fetchData<Array<Game>>(
+    'https://argus-academy.com/mock/api/games/',
+    isGameArray,
+  );
 
-  fetch('https://argus-academy.com/mock/api/games/')
-    .then((response) => {
-      if (!response.ok) {
-        console.error(
-          'Error HTTP: ',
-          `${response.status} - ${response.statusText}`,
-        );
-      }
+  respGames.then((data) => console.log(data));
 
-      // Type Assertion
-      //return response.json() as Promise<Array<Game>>;
-      return response.json();
-    })
-    .then((data) => {
-      if (isGameArray(data)) {
-        //console.log(data);
-      } else {
-        console.error('Tipo de dado inesperado!');
-      }
-    });
+  const respCars = fetchData<Array<Car>>(
+    'https://argus-academy.com/mock/api/cars/',
+    isCarArray,
+  );
 
-  //---
-  interface Car {
-    id: number;
-    brand: string;
-    model: string;
-    year: number;
-    type: string;
-    engine: string;
-  }
+  respCars.then((data) => console.log(data));
 
-  // Type Predicate
-  function isCarArray(data: any): data is Car[] {
-    return (
-      Array.isArray(data) &&
-      data.every(
-        (item) =>
-          typeof item.id === 'number' &&
-          typeof item.brand === 'string' &&
-          typeof item.model === 'string' &&
-          typeof item.year === 'number' &&
-          typeof item.type === 'string' &&
-          typeof item.engine === 'string',
-      )
-    );
-  }
-
-  fetch('https://argus-academy.com/mock/api/cars/')
+  /* fetch('https://argus-academy.com/mock/api/cars/')
     .then((response) => {
       if (!response.ok) {
         console.error(
@@ -86,5 +57,5 @@ export const bootstrap = (): void => {
       } else {
         console.error('Tipo de dado inesperado!');
       }
-    });
+    }); */
 };

@@ -1,7 +1,7 @@
 interface PersonalInfo {
-    /**
-     * Nome completo
-     */
+  /**
+   * Nome completo
+   */
   fullName: string;
   email: string;
   /**
@@ -27,4 +27,20 @@ interface Theme {
   font: Font;
   colorSheme: ColorSheme;
   layout: Layout;
+}
+
+interface Game {
+  id: number;
+  title: string;
+  genre: string;
+  year: number;
+}
+
+interface Car {
+  id: number;
+  brand: string;
+  model: string;
+  year: number;
+  type: string;
+  engine: string;
 }
