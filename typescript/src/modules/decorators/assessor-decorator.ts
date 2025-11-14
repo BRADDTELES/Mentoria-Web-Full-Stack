@@ -16,8 +16,23 @@ export const bootstrap = (): void => {
 
           originalMethod?.apply(this, [newValue]);
         }
+      };
 
-        // value
+      return descriptor;
+    };
+  }
+
+  function AddPrefix(prefix: string) {
+    return function <T>(
+      target: Object,
+      propertyKey: string | symbol,
+      descriptor: TypedPropertyDescriptor<T>,
+    ) {
+      const originalMethod = descriptor.get as () => T;
+
+      descriptor.get = function (this: any): T {
+        const originalValue = originalMethod.apply(this);
+        return `${prefix} ${originalValue}` as T;
       };
 
       return descriptor;
@@ -28,16 +43,18 @@ export const bootstrap = (): void => {
     private _title: string = '';
 
     @CapitalizeText()
+    @AddPrefix('[Ordem de Serviço]')
     set title(value: string) {
-        this._title = value;
+      this._title = value;
     }
-    
+
     get title(): string {
       return this._title;
     }
   }
 
   const serviceOrder = new ServiceOrder();
-  serviceOrder.title = 'ImpLemeNtar a pipEline de dePloy do projeto x';
+  serviceOrder.title =
+    'Refatorar o código para que as funções de tratamento de dados sejam convertidas para decoradores';
   console.warn(serviceOrder.title);
 };
