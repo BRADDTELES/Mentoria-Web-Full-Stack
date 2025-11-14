@@ -79,8 +79,8 @@ Abaixo estão os módulos da formação. Conforme eu for concluindo cada um, adi
 - [x] 🐙 **Git e GitHub**
 - [x] 💻 **JavaScript**
 - [x] 🚀 **Node.js**
-- [ ] 🔷 **TypeScript** (Em andamento)
-- [ ] ⚛️ **React**
+- [x] 🔷 **TypeScript** 
+- [ ] ⚛️ **React** (Em andamento)
 - [ ] ▶️ **Next.js**
 - [ ] 💨 **Tailwind CSS**
 - [ ] 🗄️ **Banco de Dados (MySQL, PostgreSQL)**
