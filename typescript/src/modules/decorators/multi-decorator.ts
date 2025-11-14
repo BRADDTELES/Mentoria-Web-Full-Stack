@@ -5,17 +5,15 @@ export const bootstrap = (): void => {
   };
 
   function RateLimit(limitInMilliseconds: number): MethodDecorator {
-    console.log('Decorador RateLimit', limitInMilliseconds);
     return <T>(
       target: Object,
       propertyKey: string | symbol,
       descriptor: TypedPropertyDescriptor<T>,
     ) => {
-      console.log(descriptor.value);
-      const originalMethod = descriptor.value as () => T;
+      const originalMethod = descriptor.value as (...args: any[]) => T;
       let lastExecution = 0; // a última execução
 
-      descriptor.value = function (this: any) {
+      descriptor.value = function (this: any, ...args: any[]) {
         // o instante atual
         // liberar a execução do método somente se o intervalo de segundos for atendido
         const now = Date.now(); // instante atual
@@ -28,17 +26,17 @@ export const bootstrap = (): void => {
         } else {
           lastExecution = now;
           // connecta o contexto da nova função associada ao descriptor.value com o contexto do método original, que está sendo decorado
-          return originalMethod.apply(this);
+          return originalMethod.apply(this, args);
         }
       } as T;
 
-      console.log(descriptor.value);
+      console.log(descriptor.value)
+
       return descriptor;
     };
   }
 
   function CheckPermissions(requiredPermissions: string[]): MethodDecorator {
-    console.log('Decorador CheckPermissions');
     return <T>(
       target: Object,
       propertyKey: string | symbol,
@@ -55,21 +53,42 @@ export const bootstrap = (): void => {
 
         descriptor.value = function () {} as T;
       }
-
+      console.log(descriptor.value)
       return descriptor;
     };
   }
 
   class ShoppingCart {
-    @CheckPermissions(['User', 'Admin', 'Super User'])
+    constructor(private readonly items: string[]) {}
+    /* @CheckPermissions(['User', 'Admin', 'Super User'])
     @RateLimit(3000)
     getItems() {
-      console.log('Retorna a relação de itens adicionados ao carrinho');
+        console.log('Retorna a relação de itens adicionados ao carrinho');
+    } */
+    
+    @CheckPermissions(['User', 'Admin', 'Super User'])
+    @RateLimit(3000)
+    getItemsFiltered(
+      search: string,
+      caseInsensitive: boolean = true,
+    ): string[] {
+      const itemsFiltered = this.items.filter((item) => {
+        if (caseInsensitive) {
+          return item.toLowerCase().includes(search.toLowerCase());
+        } else {
+          return item.includes(search);
+        }
+      });
+      return itemsFiltered;
     }
   }
 
-  const shoppingCart = new ShoppingCart();
+  const shoppingCart = new ShoppingCart([
+    'Árvore de Natal',
+    'Enfeite de Natal',
+  ]);
   document.getElementById('getItems')?.addEventListener('click', () => {
-    shoppingCart.getItems();
+    const itemsFiltered = shoppingCart.getItemsFiltered('natal', false);
+    console.warn(itemsFiltered);
   });
 };
