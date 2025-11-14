@@ -5,14 +5,19 @@ export const bootstrap = (): void => {
       propertyKey: string | symbol,
       descriptor: TypedPropertyDescriptor<T>, // PropertyDescriptor
     ) {
-      console.log('descriptor set: ', descriptor.set);
-      console.log('descriptor get: ', descriptor.get);
+      const originalMethod = descriptor.set as (v: any) => void;
+      descriptor.set = function (this: any, value: T) {
+        if (typeof value === 'string') {
+          const newValue = value
+            .toLowerCase()
+            .split(' ')
+            .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+            .join(' ');
 
-      descriptor.set = function () {
-        console.log('Modificamos o comportamento do setter');
-      };
-      descriptor.get = function <T>() {
-        return 'Teste' as T;
+          originalMethod?.apply(this, [newValue]);
+        }
+
+        // value
       };
 
       return descriptor;
@@ -24,15 +29,15 @@ export const bootstrap = (): void => {
 
     @CapitalizeText()
     set title(value: string) {
-      this._title = value;
+        this._title = value;
     }
-
+    
     get title(): string {
       return this._title;
     }
   }
 
   const serviceOrder = new ServiceOrder();
-  serviceOrder.title = 'Implementar a pipeline de deploy do projeto x';
+  serviceOrder.title = 'ImpLemeNtar a pipEline de dePloy do projeto x';
   console.warn(serviceOrder.title);
 };
