@@ -1,4 +1,4 @@
-import { isGameArray, isCarArray } from '../../utils/typePredicates.js';
+import { isCarArray, isGameArray } from '../../utils/typePredicates.js';
 
 export const bootstrap = (): void => {
   function fetchData<T>(
@@ -28,34 +28,11 @@ export const bootstrap = (): void => {
     'https://argus-academy.com/mock/api/games/',
     isGameArray,
   );
-
   respGames.then((data) => console.log(data));
 
   const respCars = fetchData<Array<Car>>(
     'https://argus-academy.com/mock/api/cars/',
     isCarArray,
   );
-
   respCars.then((data) => console.log(data));
-
-  /* fetch('https://argus-academy.com/mock/api/cars/')
-    .then((response) => {
-      if (!response.ok) {
-        console.error(
-          'Error HTTP: ',
-          `${response.status} - ${response.statusText}`,
-        );
-      }
-
-      // Type Assertion
-      //return response.json() as Promise<Array<Game>>;
-      return response.json();
-    })
-    .then((data) => {
-      if (isCarArray(data)) {
-        console.log(data);
-      } else {
-        console.error('Tipo de dado inesperado!');
-      }
-    }); */
 };
