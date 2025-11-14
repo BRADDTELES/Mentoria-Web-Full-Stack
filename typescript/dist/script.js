@@ -1,2 +1,2 @@
-import { bootstrap } from './modules/generics/generic-constraints.js';
+import { bootstrap } from './modules/decorators/class-decorator.js';
 export { bootstrap };
